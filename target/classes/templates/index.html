@@ -15,8 +15,14 @@
     <link rel="shortcut icon" href="/static/img/favicon.ico"/>
     <link rel="icon" type="image/png" href="/static/img/favicon.ico"/>
 
-    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async="defer"></script>
+    <!--src="http://raw.githubusercontent.com/ethereum/web3.js/0.16.0/dist/web3.min.js"-->
 
+    <!--<script th:src="@{/scripts/web3.js}" src="/./scripts/web3.js"></script>-->
+    <!--<script>web3 = new Web3(new Web3.providers.HttpProvider("https://ropsten.infura.io/KH92iLaeW68rq2EQBiSC"));</script>-->
+
+
+    <!--<script>web3 = new Web3(new Web3.providers.HttpProvider("https://testnet.infura.io/"));</script>-->
+    <!--<script>web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/MEDIUMTUTORIAL/"));</script>-->
 </head>
 
 
@@ -53,18 +59,30 @@
         <div class="row first">
 
             <h5 class="row portf idx"
-                th:text="'Welcome to Clash' + ${name}">
+                th:text="'Welcome to Clash'">
             </h5>
             <br/>
             <div class="row portf idx">
                 <!--green price up, red price down:-->
-                <span>BitCoin price: </span><span style="color: #901400" th:text="${BcPrice}"></span>
+                <span>Latest block: </span><span style="color: #901400" th:text="${lBlock}"></span>
             </div>
             <br/>
             <div class="row portf idx">
-                <span>Ether price:</span><span style="color: #901400" th:text="${EthPrice}"></span>
+                <span>Ether price:</span>
+                <span style="color: #901400" th:text="${EthPrice}">
+                                        <script>document.write(web3 + "<br/><br/>");</script>
+
+            </span>
             </div>
             <br/>
+            <div class="row portf idx">
+                <span>web3ClientVersion:</span>
+                <span style="color: #901400" th:text="${web3ClientVersion}">
+                    <!--<script>document.write(Web3.eth.gasPrice + "<br/><br/>");</script>-->
+            </span>
+            </div>
+            <br/>
+
             <!--add click function!!!-->
 
         </div><!--first row-->

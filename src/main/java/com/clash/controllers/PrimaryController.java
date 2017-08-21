@@ -1,17 +1,25 @@
 package com.clash.controllers;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.web3j.protocol.Web3j;
+import org.web3j.protocol.core.methods.response.Web3ClientVersion;
+import org.web3j.protocol.infura.InfuraHttpService;
 
+@Controller
 public class PrimaryController {
 
+    Web3j web3 = Web3j.build(new InfuraHttpService("https://ropsten.infura.io/KH92iLaeW68rq2EQBiSC"));
+    Web3ClientVersion web3ClientVersion = new Web3ClientVersion();
+//    web3ClientVersion().toString();
 
     @RequestMapping(value = {"", "/", "/index"})
-    public String index(@RequestParam(value = "name", required = false, defaultValue = "") String name, Model
-        model) {
-        model.addAttribute("name", name);
+    public String index(Model model) {
+
+        model.addAttribute("web3", web3);
+        model.addAttribute("web3ClientVersion", web3ClientVersion);
         return "index";
     }
 
@@ -29,9 +37,9 @@ public class PrimaryController {
     }
 
 
-    @RequestMapping("/about")
-    public String about() {
-        return "about";
+    @RequestMapping("/web3")
+    public String web3() {
+        return "web3";
     }
 
     @RequestMapping("/contact")
@@ -43,6 +51,7 @@ public class PrimaryController {
     @ExceptionHandler
     //add URL request query feedback later:
     public String error() {
+
         return "error";
     }
 
