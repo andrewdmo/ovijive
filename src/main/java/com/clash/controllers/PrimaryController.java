@@ -8,18 +8,21 @@ import org.web3j.protocol.Web3j;
 import org.web3j.protocol.core.methods.response.Web3ClientVersion;
 import org.web3j.protocol.infura.InfuraHttpService;
 
+import java.util.concurrent.ExecutionException;
+
 @Controller
 public class PrimaryController {
 
-    Web3j web3 = Web3j.build(new InfuraHttpService("https://ropsten.infura.io/KH92iLaeW68rq2EQBiSC"));
-    Web3ClientVersion web3ClientVersion = new Web3ClientVersion();
-//    web3ClientVersion().toString();
 
     @RequestMapping(value = {"", "/", "/index"})
-    public String index(Model model) {
+    public String index(Model model) throws ExecutionException, InterruptedException {
+
+        Web3j web3 = Web3j.build(new InfuraHttpService("https://ropsten.infura.io/KH92iLaeW68rq2EQBiSC"));
+        Web3ClientVersion web3ClientVersion = web3.web3ClientVersion().sendAsync().get();
+        String webVersion = web3ClientVersion.getWeb3ClientVersion();
 
         model.addAttribute("web3", web3);
-        model.addAttribute("web3ClientVersion", web3ClientVersion);
+        model.addAttribute("webVersion", webVersion);
         return "index";
     }
 
