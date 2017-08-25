@@ -4,27 +4,15 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.web3j.protocol.Web3j;
-import org.web3j.protocol.core.methods.response.Web3ClientVersion;
-import org.web3j.protocol.infura.InfuraHttpService;
-
-import java.util.concurrent.ExecutionException;
 
 @Controller
 public class PrimaryController {
 
-
     @RequestMapping(value = {"", "/", "/index"})
-    public String index(Model model) throws ExecutionException, InterruptedException {
-
-        Web3j web3 = Web3j.build(new InfuraHttpService("https://ropsten.infura.io/KH92iLaeW68rq2EQBiSC"));
-        Web3ClientVersion web3ClientVersion = web3.web3ClientVersion().sendAsync().get();
-        String webVersion = web3ClientVersion.getWeb3ClientVersion();
-
-        model.addAttribute("web3", web3);
-        model.addAttribute("webVersion", webVersion);
-        return "index";
+    public void index(Model model) throws Exception {
+        EthCourier.update(model);
     }
+
 
     // maybe change name later for protection:
     // GET/POST handled by Spring Sec.
@@ -52,9 +40,7 @@ public class PrimaryController {
 
     //    Move to ExceptionController:
     @ExceptionHandler
-    //add URL request query feedback later:
-    public String error() {
-
+    public String error(Exception e) {
         return "error";
     }
 

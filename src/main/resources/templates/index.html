@@ -68,24 +68,38 @@
             </div>
             <br/>
             <div class="row portf idx">
-                <span>Ether price:</span>
-                <span style="color: #901400" th:text="${EthPrice}">
-                                        <script>document.write(web3 + "<br/><br/>");</script>
+                <span>Ether/BitCoin exchange rate:</span>
+                <span style="color: #901400" th:text="${status}"></span>
+                <span style="color: #901400" th:text="${header}"></span>
+                <span style="color: #901400" th:text="${body}"></span>
 
-            </span>
             </div>
             <br/>
             <div class="row portf idx">
-                <span>web3ClientVersion:</span>
+                <span>web3ClientVersion (A-Sync):</span>
                 <span style="color: #901400" th:text="${webVersion}">
                     <!--<script>document.write(Web3.eth.gasPrice + "<br/><br/>");</script>-->
             </span>
             </div>
             <br/>
-
+            <div class="row portf idx">
+                <span>web3ClientVersion (Sync):</span>
+                <span style="color: #901400" th:text="${webVersionSync}">
+                    <!--<script>document.write(Web3.eth.gasPrice + "<br/><br/>");</script>-->
+            </span>
+            </div>
+            <br/>
+            <div class="row portf idx">
+                <span>web3:</span>
+                <span style="color: #901400" th:text="${web3Text}">
+                    <!--<script>document.write(Web3.eth.gasPrice + "<br/><br/>");</script>-->
+            </span>
+            </div>
             <!--add click function!!!-->
 
         </div><!--first row-->
+
+        <a class="button-primary" href="results.html"></a>
 
 
     </div><!--row middle primary-->
