@@ -67,15 +67,16 @@
                 <span>Latest block: </span><span style="color: #901400" th:text="${lBlock}"></span>
             </div>
             <br/>
-            <div class="row portf idx">
-                <span>Ether/BitCoin exchange rate:</span>
-                <span style="color: #901400" th:text="${status}"></span>
-                <span style="color: #901400" th:text="${header}"></span>
-                <span style="color: #901400" th:text="${body}"></span>
-
-            </div>
+            <div class="row 1 portf idx">
+                <div class="one column portf"></div>
+                <div class="one column" style="color: #901400" th:text="${status}"></div>
+            </div><!--row1-->
+            <div class="row 2 portf idx">
+                <div class="two columns" style="color: #901400" th:text="${header}"></div>
+                <div class="three columns" style="color: #901400" th:text="${body}"></div>
+            </div><!--row2-->
             <br/>
-            <div class="row portf idx">
+            <div class="row portf idx">¬
                 <span>web3ClientVersion (A-Sync):</span>
                 <span style="color: #901400" th:text="${webVersion}">
                     <!--<script>document.write(Web3.eth.gasPrice + "<br/><br/>");</script>-->

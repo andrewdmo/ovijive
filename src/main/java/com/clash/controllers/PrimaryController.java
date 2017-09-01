@@ -10,7 +10,9 @@ public class PrimaryController {
 
     @RequestMapping(value = {"", "/", "/index"})
     public void index(Model model) throws Exception {
-        EthCourier.update(model);
+        //CHANGE MANUALLY:
+//        Web3jCourier.update(model);
+        InfuraApiCourier.update(model);
     }
 
 
