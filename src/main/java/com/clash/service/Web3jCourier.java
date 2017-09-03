@@ -32,7 +32,7 @@ public class Web3jCourier {
         String webVersionSync = web3ClientVersionSync.getWeb3ClientVersion();
 
         //ticker, symbol changeable:
-        Response response = CurrentPriceService.tickerResponse("ethbtc");
+        Response response = livePriceService.tickerResponse("ethbtc");
         int status = response.getStatus();
         MultivaluedMap<String, Object> header = response.getHeaders();
         String body = response.readEntity(String.class);

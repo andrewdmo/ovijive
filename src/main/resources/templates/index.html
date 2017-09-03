@@ -40,7 +40,7 @@
           href="/static/img/favicon-16x16.png"/>
     <link rel="manifest" href="/static/img/manifest.json"/>
     <meta name="msapplication-TileColor" content="#ffffff"/>
-    <meta name="msapplication-TileImage" th:content="@{/img/ms-icon-144x144.png}" content="/ms-icon-144x144.png"/>
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
     <meta name="theme-color" content="#ffffff"/>
     <link rel="shortcut icon" th:href="@{/img/favicon.ico}" href="/static/img/favicon.ico"/>
     <link rel="icon" type="image/png" th:href="@{/img/ms-icon-144x144.png}" href="/static/img/favicon.ico"/>
@@ -51,19 +51,19 @@
     <!--<script>web3 = new Web3(new Web3.providers.HttpProvider("https://ropsten.infura.io/KH92iLaeW68rq2EQBiSC"));</script>-->
 
 
-            <!--<script>web3 = new Web3(new Web3.providers.HttpProvider("https://testnet.infura.io/"));</script>-->
-            <!--<script>web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/MEDIUMTUTORIAL/"));</script>-->
-            </head>
+    <!--<script>web3 = new Web3(new Web3.providers.HttpProvider("https://testnet.infura.io/"));</script>-->
+    <!--<script>web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/MEDIUMTUTORIAL/"));</script>-->
+</head>
 
 
-            <body>
-            <div class="container main">
-                <div class="row top primary">
-                    <div class="four columns">
-                        <a th:href="index.html" href="index.html" rel="#home">
-                            <img th:src="@{/img/EthDarkSideLogo.svg}" src="../static/img/EthDarkSideLogo.svg" class="logo"
-                                 alt="Clash logo"/>
-                        </a>
+<body>
+<div class="container main">
+    <div class="row top primary">
+        <div class="four columns">
+            <a th:href="index.html" href="index.html" rel="#home">
+                <img th:src="@{/img/EthDarkSideLogo.svg}" src="../static/img/EthDarkSideLogo.svg" class="logo"
+                     alt="Clash logo"/>
+            </a>
         </div><!--four columns-->
         <div class="eight columns">
             <div class="row oneA menubar">
@@ -93,35 +93,40 @@
             </h5>
         </div><!--row banner-->
 
-
-        <div class="row 1 portf idx">
-            <span class="four columns">Server response status (200 = Good):</span>
-            <span class="eight columns" style="color: #901400" th:text="${status}">
-            </span>
+        <div class="row portf idx">
+            <span class="four columns">Live ETH-BTC current price:</span>
+            <span class="eight columns" style="color: #901400" th:text="${body}"></span>
         </div><!--row1-->
 
 
-        <div class="row 2 portf idx">
-            <span class="four columns">Live ETH-BTC current price:</span>
-            <span class="eight columns" style="color: #901400" th:text="${body}"></span>
+        <div class="row portf idx">
+            <span class="four columns">Ethereum Wallet #1:</span>
+            <span class="eight columns" style="color: #901400" th:text="${wallet1}"></span>
+
         </div><!--row2-->
 
 
-        <div class="row 3 portf idx">
+        <div class="row portf idx">
             <span class="four columns">web3 clientVersion (A-Sync):</span>
             <span class="eight columns" style="color: #901400" th:text="${webVersion}"></span>
         </div><!--row3-->
 
 
-        <div class="row 4 portf idx">
+        <div class="row portf idx">
             <span class="four columns">Web3 clientVersion (Sync, if available):</span>
             <span class="eight columns" style="color: #901400" th:text="${webVersionSync}">N/A</span>
         </div><!--row4-->
 
-        <div class="row 5 portf idx ">
+        <div class="row portf idx ">
             <span class="four columns">Header response:</span>
             <span class="eight columns" style="color: #901400" th:text="${headers}"></span>
         </div><!--row5-->
+
+        <div class="row portf idx">
+            <span class="four columns">Server response status (200 = Good):</span>
+            <span class="eight columns" style="color: #901400" th:text="${status}">
+            </span>
+        </div><!--row6-->
 
     </div><!--row middle primary-->
 

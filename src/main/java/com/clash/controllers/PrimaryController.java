@@ -10,17 +10,23 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class PrimaryController {
 
+
     @RequestMapping(value = {"", "/", "/index"})
     public String index(Model model) throws Exception {
+        InfuraApiCourier ping = new InfuraApiCourier();
+
         //CHANGE MANUALLY (URL still works):
 //        Web3jCourier.pingWeb3j(model);
-        InfuraApiCourier.pingInfura(model);
+        ping.pingInfura(model);
         return "index";
     }
 
+    //for testing:
     @RequestMapping(value = {"/infura", "infuradash", "infuradashboard"})
     public String infura(Model model) throws Exception {
-        InfuraApiCourier.pingInfura(model);
+        InfuraApiCourier ping = new InfuraApiCourier();
+        ping.pingInfura(model);
+
         return "index";
     }
 

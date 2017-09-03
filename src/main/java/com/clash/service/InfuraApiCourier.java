@@ -8,17 +8,18 @@ import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+
 @Service
 public class InfuraApiCourier {
 
     //pub-private :
-    public static Model pingInfura(Model model) throws Exception {
+    public Model pingInfura(Model model) throws Exception {
         update(model);
         return model;
     }
 
 
-    private static Model update(Model model) throws Exception {
+    private Model update(Model model) throws Exception {
 
         Client client = ClientBuilder.newClient();
 
@@ -34,22 +35,23 @@ public class InfuraApiCourier {
             .header("Accept", "application/json")
             .get();
 
-//        Response getHeaders = client.target("http://api.infura.io/v1/jsonrpc/ropsten/web3_clientVersion")
-//            .request(MediaType.APPLICATION_JSON_TYPE)
-//            .header("Accept", "application/json")
-//            .get();
+        String wallet1 = new EthAccountService().getAccountBalance("85afad1a07d70bcb3850250b6a0903ce231dcbfd", model);
+        {
 
-        //console:
-        System.out.println("status: " + web3ClientVersion.getStatus());
-        System.out.println("headers: " + web3ClientVersion.getHeaders());
-        System.out.println("body:" + body);
 
-        model.addAttribute("status", web3ClientVersion.getStatus());
-        model.addAttribute("webVersion", web3ClientVersion);
-        model.addAttribute("headers", web3ClientVersion.getHeaders());
-        model.addAttribute("body", body);
+            //console:
+            System.out.println("status: " + web3ClientVersion.getStatus());
+            System.out.println("headers: " + web3ClientVersion.getHeaders());
+            System.out.println("body:" + body);
 
-        return model;
+            model.addAttribute("status", web3ClientVersion.getStatus());
+            model.addAttribute("webVersion", web3ClientVersion);
+            model.addAttribute("headers", web3ClientVersion.getHeaders());
+            model.addAttribute("body", body);
+            model.addAttribute("wallet1", wallet1);
+
+            return model;
+        }
+
     }
-
 }

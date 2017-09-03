@@ -8,8 +8,7 @@ html,
 body {
     background: linear-gradient(
             to top right,
-            #073763,
-            lightsteelblue) no-repeat fixed; /*background: url("../img/IMG_4979.jpg") center fixed no-repeat;*/
+            #4b9cd3, #c2c2c2) no-repeat fixed; /*background: url("../img/IMG_4979.jpg") center fixed no-repeat;*/
     background-size: cover;
     height: 150vh;
     /*transition: all 0.5s;*/
@@ -41,7 +40,7 @@ body {
 
 .logo:hover {
     background-color: transparent;
-    border: outset #901400 2px;
+    border: outset #9e1b32 2px;
     border-radius: 7px;
     opacity: .7;
     transform: scale(1.1);
@@ -73,7 +72,7 @@ body {
 
 .navlogo:hover {
     background-color: transparent;
-    border: outset #901400 2px;
+    border: outset #9e1b32 2px;
     border-radius: 7px;
     opacity: .7;
     transform: scale(1.1);
