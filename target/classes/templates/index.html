@@ -53,55 +53,45 @@
 
         </div><!--eight columns-->
     </div><!--row top-->
-    <br/>
+
 
     <div class="row middle primary">
-        <div class="row first">
+        <div class="row banner">
 
             <h5 class="row portf idx"
                 th:text="'Welcome to Clash'">
             </h5>
-            <br/>
-            <div class="row portf idx">
-                <!--green price up, red price down:-->
-                <span>Latest block: </span><span style="color: #901400" th:text="${lBlock}"></span>
-            </div>
-            <br/>
-            <div class="row 1 portf idx">
-                <div class="one column portf"></div>
-                <div class="one column" style="color: #901400" th:text="${status}"></div>
-            </div><!--row1-->
-            <div class="row 2 portf idx">
-                <div class="two columns" style="color: #901400" th:text="${header}"></div>
-                <div class="three columns" style="color: #901400" th:text="${body}"></div>
-            </div><!--row2-->
-            <br/>
-            <div class="row portf idx">¬
-                <span>web3ClientVersion (A-Sync):</span>
-                <span style="color: #901400" th:text="${webVersion}">
-                    <!--<script>document.write(Web3.eth.gasPrice + "<br/><br/>");</script>-->
-            </span>
-            </div>
-            <br/>
-            <div class="row portf idx">
-                <span>web3ClientVersion (Sync):</span>
-                <span style="color: #901400" th:text="${webVersionSync}">
-                    <!--<script>document.write(Web3.eth.gasPrice + "<br/><br/>");</script>-->
-            </span>
-            </div>
-            <br/>
-            <div class="row portf idx">
-                <span>web3:</span>
-                <span style="color: #901400" th:text="${web3Text}">
-                    <!--<script>document.write(Web3.eth.gasPrice + "<br/><br/>");</script>-->
-            </span>
-            </div>
-            <!--add click function!!!-->
+        </div><!--row banner-->
 
-        </div><!--first row-->
 
-        <a class="button-primary" href="results.html"></a>
+        <div class="row 1 portf idx">
+            <span class="four columns">Server response status (200 = Good):</span>
+            <span class="eight columns" style="color: #901400" th:text="${status}">
+            </span>
+        </div><!--row1-->
 
+
+        <div class="row 2 portf idx">
+            <span class="four columns">Live ETH-BTC current price:</span>
+            <span class="eight columns" style="color: #901400" th:text="${body}"></span>
+        </div><!--row2-->
+
+
+        <div class="row 3 portf idx">
+            <span class="four columns">web3 clientVersion (A-Sync):</span>
+            <span class="eight columns" style="color: #901400" th:text="${webVersion}"></span>
+        </div><!--row3-->
+
+
+        <div class="row 4 portf idx">
+            <span class="four columns">Web3 clientVersion (Sync, if available):</span>
+            <span class="eight columns" style="color: #901400" th:text="${webVersionSync}">N/A</span>
+        </div><!--row4-->
+
+        <div class="row 5 portf idx ">
+            <span class="four columns">Header response:</span>
+            <span class="eight columns" style="color: #901400" th:text="${headers}"></span>
+        </div><!--row5-->
 
     </div><!--row middle primary-->
 

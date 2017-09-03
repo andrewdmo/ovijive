@@ -15,7 +15,7 @@ public class UnbrokenSecConfig extends WebSecurityConfigurerAdapter {
         http
 //                .antMatcher("/")
             .authorizeRequests()
-            .antMatchers("/", "/index","/scripts/**").permitAll()
+            .antMatchers("/", "/index", "/scripts/**", "/infura**", "/web3j**").permitAll()
 
             .antMatchers("/usersecurespace", "/user/**").hasRole("USER");
 //            .anyRequest().permitAll();

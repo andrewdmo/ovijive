@@ -1,5 +1,7 @@
 package com.clash.controllers;
 
+import com.clash.service.InfuraApiCourier;
+import com.clash.service.Web3jCourier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -9,12 +11,24 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class PrimaryController {
 
     @RequestMapping(value = {"", "/", "/index"})
-    public void index(Model model) throws Exception {
-        //CHANGE MANUALLY:
-//        Web3jCourier.update(model);
-        InfuraApiCourier.update(model);
+    public String index(Model model) throws Exception {
+        //CHANGE MANUALLY (URL still works):
+//        Web3jCourier.pingWeb3j(model);
+        InfuraApiCourier.pingInfura(model);
+        return "index";
     }
 
+    @RequestMapping(value = {"/infura", "infuradash", "infuradashboard"})
+    public String infura(Model model) throws Exception {
+        InfuraApiCourier.pingInfura(model);
+        return "index";
+    }
+
+    @RequestMapping(value = {"/web3jdashboard", "/web3jdash", "/web3j"})
+    public String web3j(Model model) throws Exception {
+        Web3jCourier.pingWeb3j(model);
+        return "index";
+    }
 
     // maybe change name later for protection:
     // GET/POST handled by Spring Sec.

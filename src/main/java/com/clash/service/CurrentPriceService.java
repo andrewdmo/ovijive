@@ -23,7 +23,7 @@ import javax.ws.rs.core.Response;
 
 public class CurrentPriceService {
 
-    public static Response response(String symbol) {
+    public static Response tickerResponse(String symbol) {
 
         Client client = ClientBuilder.newClient();
 

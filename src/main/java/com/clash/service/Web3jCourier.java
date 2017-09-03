@@ -1,9 +1,7 @@
-package com.clash.controllers;
+package com.clash.service;
 
-import com.clash.service.CurrentPriceService;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.web3j.protocol.Web3j;
 import org.web3j.protocol.core.methods.response.Web3ClientVersion;
 import org.web3j.protocol.infura.InfuraHttpService;
@@ -15,12 +13,12 @@ import javax.ws.rs.core.Response;
 public class Web3jCourier {
 
     //pub-private :
-    public static void update(Model model) throws Exception {
-        web3j(model);
+    public static Model pingWeb3j(Model model) throws Exception {
+        update(model);
+        return model;
     }
 
-    @RequestMapping(value = {"/web3jdashboard", "/web3jdash"})
-    private static String web3j(Model model) throws Exception {
+    private static Model update(Model model) throws Exception {
 
         // instantiate request for unique (Ropsten test) Infura node:
         Web3j web3 = Web3j.build(new InfuraHttpService("https://ropsten.infura.io/KH92iLaeW68rq2EQBiSC"));
@@ -34,22 +32,23 @@ public class Web3jCourier {
         String webVersionSync = web3ClientVersionSync.getWeb3ClientVersion();
 
         //ticker, symbol changeable:
-        Response response = CurrentPriceService.response("ethbtc");
+        Response response = CurrentPriceService.tickerResponse("ethbtc");
         int status = response.getStatus();
         MultivaluedMap<String, Object> header = response.getHeaders();
         String body = response.readEntity(String.class);
 
-
-//        System.out.println("status: " + response.getStatus());
-//        System.out.println("headers: " + response.getHeaders());
-//        System.out.println("body:" + response.readEntity(String.class));
-
+        model.addAttribute("status", status);
         model.addAttribute("webVersion", webVersion);
         model.addAttribute("webVersionSync", webVersionSync);
-        model.addAttribute("status", status);
         model.addAttribute("headers", header);
         model.addAttribute("body", body);
-        return "index";
 
-    } //String update()
+        //console:
+        System.out.println("status: " + response.getStatus());
+        System.out.println("headers: " + response.getHeaders());
+        System.out.println("body:" + body);
+
+        return model;
+
+    }
 }
