@@ -7,10 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Clash" />
+        <module name="Ovijive" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.7">
-      <module name="Clash" target="1.8" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="Ovijive" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

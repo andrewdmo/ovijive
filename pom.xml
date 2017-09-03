@@ -9,11 +9,11 @@
         <version>1.5.3.RELEASE</version>
     </parent>
 
-    <artifactId>Clash</artifactId>
-    <name>Clash Protocol</name>
-    <version>0.3.0</version>
+    <artifactId>Ovijive</artifactId>
+    <name>Ovijive Protocol</name>
+    <version>1.3.0</version>
     <packaging>jar</packaging>
-
+    
     <properties>
         <java.version>1.8</java.version>
     </properties>
