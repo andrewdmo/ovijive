@@ -1,34 +1,33 @@
 package com.clash.controllers;
 
-import com.clash.service.InfuraApiCourier;
+import com.clash.service.InfuraApiService;
 import com.clash.service.Web3jCourier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class PrimaryController {
 
+    private InfuraApiService infPing = new InfuraApiService();
 
     @RequestMapping(value = {"", "/", "/index"})
     public String index(Model model) throws Exception {
-        InfuraApiCourier ping = new InfuraApiCourier();
 
-        //CHANGE MANUALLY (URL still works):
+        //CHANGE MANUALLY TO SWITCH (URL still works):
 //        Web3jCourier.pingWeb3j(model);
-        ping.pingInfura(model);
+        infPing.pingInfura(model);
         return "index";
     }
 
     //for testing:
-    @RequestMapping(value = {"/infura", "infuradash", "infuradashboard"})
-    public String infura(Model model) throws Exception {
-        InfuraApiCourier ping = new InfuraApiCourier();
-        ping.pingInfura(model);
-
-        return "index";
-    }
+//    @RequestMapping(value = {"/infura", "/infuradash", "/infuradashboard"})
+//    public String infura(Model model) throws Exception {
+////        InfuraApiService ping = new InfuraApiService();
+//        infPing.pingInfura(model);
+//
+//        return "index";
+//    }
 
     @RequestMapping(value = {"/web3jdashboard", "/web3jdash", "/web3j"})
     public String web3j(Model model) throws Exception {
@@ -39,7 +38,7 @@ public class PrimaryController {
     // maybe change name later for protection:
     // GET/POST handled by Spring Sec.
     @RequestMapping("/login")
-    public String login(Model model) {
+    public String login() {
         return "login";
     }
 
@@ -61,10 +60,10 @@ public class PrimaryController {
     }
 
     //    Move to ExceptionController:
-    @ExceptionHandler
-    public String error(Exception e) {
-        return "error";
-    }
+//    @ExceptionHandler
+//    public String error(Exception e) {
+//        return "error";
+//    }
 
 }
 

@@ -10,7 +10,9 @@ import javax.ws.rs.core.Response;
 
 
 @Service
-public class InfuraApiCourier {
+public class InfuraApiService {
+
+    private EthAccountService ethAccountService;
 
     //pub-private :
     public Model pingInfura(Model model) throws Exception {
@@ -19,7 +21,7 @@ public class InfuraApiCourier {
     }
 
 
-    private Model update(Model model) throws Exception {
+    private static Model update(Model model) throws Exception {
 
         Client client = ClientBuilder.newClient();
 
@@ -35,23 +37,21 @@ public class InfuraApiCourier {
             .header("Accept", "application/json")
             .get();
 
-        String wallet1 = new EthAccountService().getAccountBalance("85afad1a07d70bcb3850250b6a0903ce231dcbfd", model);
-        {
+        String wallet1 = EthAccountService.getAccountBalance("0x85afad1a07d70bcb3850250b6a0903ce231dcbfd");
 
 
-            //console:
-            System.out.println("status: " + web3ClientVersion.getStatus());
-            System.out.println("headers: " + web3ClientVersion.getHeaders());
-            System.out.println("body:" + body);
+        //console:
+        System.out.println("status: " + web3ClientVersion.getStatus());
+        System.out.println("headers: " + web3ClientVersion.getHeaders());
+        System.out.println("body:" + body);
 
-            model.addAttribute("status", web3ClientVersion.getStatus());
-            model.addAttribute("webVersion", web3ClientVersion);
-            model.addAttribute("headers", web3ClientVersion.getHeaders());
-            model.addAttribute("body", body);
-            model.addAttribute("wallet1", wallet1);
+        model.addAttribute("status", web3ClientVersion.getStatus());
+        model.addAttribute("webVersion", web3ClientVersion);
+        model.addAttribute("headers", web3ClientVersion.getHeaders());
+        model.addAttribute("body", body);
+        model.addAttribute("wallet1", wallet1);
 
-            return model;
-        }
-
+        return model;
     }
+
 }
