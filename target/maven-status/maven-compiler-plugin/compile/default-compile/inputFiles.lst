@@ -3,6 +3,8 @@
 /Users/andrewdmo/Projects/clash/src/main/java/com/clash/controllers/ExceptHandler.java
 /Users/andrewdmo/Projects/clash/src/main/java/com/clash/service/EthGiveService.java
 /Users/andrewdmo/Projects/clash/src/main/java/com/clash/service/Web3jCourier.java
+/Users/andrewdmo/Projects/clash/src/main/java/com/clash/beans/WalletBalances.java
+/Users/andrewdmo/Projects/clash/src/main/java/com/clash/entities/Wallet.java
 /Users/andrewdmo/Projects/clash/src/main/java/com/clash/controllers/PrimaryController.java
 /Users/andrewdmo/Projects/clash/src/main/java/com/clash/service/EthAccountService.java
 /Users/andrewdmo/Projects/clash/src/main/java/com/clash/service/livePriceService.java

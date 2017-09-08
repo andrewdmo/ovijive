@@ -8,11 +8,16 @@ import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import static com.clash.beans.WalletBalances.wallet1;
+import static com.clash.beans.WalletBalances.wallet2;
+
 
 @Service
 public class InfuraApiService {
 
     private EthAccountService ethAccountService;
+
+//    WalletBalances walletBalances = new WalletBalances();
 
     //pub-private :
     public Model pingInfura(Model model) throws Exception {
@@ -24,6 +29,7 @@ public class InfuraApiService {
     private static Model update(Model model) throws Exception {
 
         Client client = ClientBuilder.newClient();
+
 
         Response etcBtcTickerResponse = client.target("https://api.infura.io/v1/ticker/ethbtc")
             .request(MediaType.APPLICATION_JSON_TYPE)
@@ -37,7 +43,8 @@ public class InfuraApiService {
             .header("Accept", "application/json")
             .get();
 
-        String wallet1 = EthAccountService.getAccountBalance("0x85afad1a07d70bcb3850250b6a0903ce231dcbfd");
+//        early trial:
+//        String wallet1 = EthAccountService.getAccountBalance("0x85afad1a07d70bcb3850250b6a0903ce231dcbfd");
 
 
         //console:
@@ -49,7 +56,9 @@ public class InfuraApiService {
         model.addAttribute("webVersion", web3ClientVersion);
         model.addAttribute("headers", web3ClientVersion.getHeaders());
         model.addAttribute("body", body);
-        model.addAttribute("wallet1", wallet1);
+        model.addAttribute("wallet1", wallet1());
+        model.addAttribute("wallet2", wallet2());
+
 
         return model;
     }
