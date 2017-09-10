@@ -1,22 +1,28 @@
 package com.clash.controllers;
 
-import com.clash.service.InfuraApiService;
 import com.clash.service.Web3jCourier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import static com.clash.service.InfuraApiService.pingInfura;
+
 @Controller
 public class PrimaryController {
 
-    private InfuraApiService infPing = new InfuraApiService();
+//    private RequestBean requestBean;
+
+    public PrimaryController() throws Exception {
+        pingInfura();
+    }
+
 
     @RequestMapping(value = {"", "/", "/index"})
-    public String index(Model model) throws Exception {
+    public String index(Model request) throws Exception {
 
         //CHANGE MANUALLY TO SWITCH (URL still works):
 //        Web3jCourier.pingWeb3j(model);
-        infPing.pingInfura(model);
+        pingInfura();
         return "index";
     }
 

@@ -1,19 +1,14 @@
 package com.clash.beans;
 
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
 import static com.clash.service.EthAccountService.getAccountBalance;
 
-@Configuration
-public class WalletBalances {
 
-//    not needed if bean:
-//    EthAccountService ethAccountService = new EthAccountService();
+public class WalletBalances {
 
     private String wallet1;
     private String wallet2;
-    private String wallet3;
 
 
     @Bean

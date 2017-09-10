@@ -1,13 +1,14 @@
 package com.clash.service;
 
+import com.clash.beans.RequestBean;
 import org.springframework.stereotype.Service;
-import org.springframework.ui.Model;
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import static com.clash.beans.RequestBean.addAttribute;
 import static com.clash.beans.WalletBalances.wallet1;
 import static com.clash.beans.WalletBalances.wallet2;
 
@@ -15,18 +16,23 @@ import static com.clash.beans.WalletBalances.wallet2;
 @Service
 public class InfuraApiService {
 
-    private EthAccountService ethAccountService;
+    RequestBean requestBean = new RequestBean();
+
+    public InfuraApiService() {
+
+    }
 
 //    WalletBalances walletBalances = new WalletBalances();
 
     //pub-private :
-    public Model pingInfura(Model model) throws Exception {
-        update(model);
-        return model;
+    public static RequestBean pingInfura() throws Exception {
+        RequestBean requestBean = new RequestBean();
+        requestBean = update(requestBean);
+        return requestBean;
     }
 
 
-    private static Model update(Model model) throws Exception {
+    private static RequestBean update(RequestBean requestBean) throws Exception {
 
         Client client = ClientBuilder.newClient();
 
@@ -52,15 +58,15 @@ public class InfuraApiService {
         System.out.println("headers: " + web3ClientVersion.getHeaders());
         System.out.println("body:" + body);
 
-        model.addAttribute("status", web3ClientVersion.getStatus());
-        model.addAttribute("webVersion", web3ClientVersion);
-        model.addAttribute("headers", web3ClientVersion.getHeaders());
-        model.addAttribute("body", body);
-        model.addAttribute("wallet1", wallet1());
-        model.addAttribute("wallet2", wallet2());
+        addAttribute("status", web3ClientVersion.getStatus());
+        addAttribute("webVersion", web3ClientVersion);
+        addAttribute("headers", web3ClientVersion.getHeaders());
+        addAttribute("body", body);
+        addAttribute("wallet1", wallet1());
+        addAttribute("wallet2", wallet2());
 
 
-        return model;
+        return requestBean;
     }
 
 }

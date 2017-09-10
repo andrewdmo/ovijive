@@ -1,7 +1,5 @@
 package com.clash.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import javax.ws.rs.client.Client;
@@ -12,10 +10,9 @@ import javax.ws.rs.core.Response;
 @Service
 public class EthAccountService {
 
-    @Autowired
     private static Client client = ClientBuilder.newClient();
 
-    @Bean
+
     public static String getAccountBalance(String address) throws Exception {
 
         return retrieveBalance(address);
@@ -34,7 +31,11 @@ public class EthAccountService {
             .header("Accept", "application/json")
             .get();
 
-        return walletResponse.readEntity(String.class);
+        //comes out as: {"jsonrpc":"2.0","id":1,"result":"0x222489bf90d0df200"}
+//        return walletResponse.readEntity(String.class);
+
+
+        return walletResponse.readEntity(String.class) + walletResponse2.readEntity(String.class);
 
     }
 }
