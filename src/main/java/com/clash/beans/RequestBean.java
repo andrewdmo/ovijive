@@ -5,50 +5,67 @@ import org.springframework.ui.Model;
 import java.util.Collection;
 import java.util.Map;
 
-//Should be Bean but cant annotate:
-
 public class RequestBean {
 
-    private final Model RequestBean = new Model() {
+    public String timeStamp;
 
-        @Override
-        public Model addAttribute(String s, Object o) {
-            return null;
-        }
+    private String userIp;
 
-        @Override
-        public Model addAttribute(Object o) {
-            return null;
-        }
-
-        @Override
-        public Model addAllAttributes(Collection<?> collection) {
-            return null;
-        }
-
-        @Override
-        public Model addAllAttributes(Map<String, ?> map) {
-            return null;
-        }
-
-        @Override
-        public Model mergeAttributes(Map<String, ?> map) {
-            return null;
-        }
-
-        @Override
-        public boolean containsAttribute(String s) {
-            return false;
-        }
-
-        @Override
-        public Map<String, Object> asMap() {
-            return null;
-        }
-    };// Model RequestBean
-
-    public static void addAttribute(String status, int status1) {
+    public RequestBean() {
     }
-}
+
+    public void setTimeStamp(String timeStamp) {
+        this.timeStamp = timeStamp;
+    }
+
+    public String getTimeStamp() {
+        return timeStamp;
+    }
+
+    public String getUserIp() {
+        return userIp;
+    }
+
+    public void setUserIp(String userIp) {
+        this.userIp = userIp;
+    }
+
+    public Model addAttribute(String s, Object o) {
+        return null;
+    }
+
+    public Model addAttribute(Object o) {
+        return null;
+    }
+
+    public Model addAllAttributes(Collection<?> collection) {
+        return null;
+    }
+
+    public Model addAllAttributes(Map<String, ?> map) {
+        return null;
+    }
+
+    public Model mergeAttributes(Map<String, ?> map) {
+        return null;
+    }
+
+    public boolean containsAttribute(String s) {
+        return false;
+    }
+
+    public Map<String, Object> asMap() {
+        return null;
+    }
+
+// Constructor RequestBean
+
+}//class
+
+
+//    public static void addAttribute(String status, int status1) {
+//    }
+//}
 
 //    Bean should have Gets, Sets and NO-ARG constructor:
+

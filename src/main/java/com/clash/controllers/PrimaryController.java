@@ -10,18 +10,19 @@ import static com.clash.service.InfuraApiService.pingInfura;
 @Controller
 public class PrimaryController {
 
-//    private RequestBean requestBean;
+    //    private RequestBean requestBean;
+//    private RequestBean requestBean = new RequestBean();
 
     public PrimaryController() throws Exception {
-        pingInfura();
+//        pingInfura();
     }
 
-
     @RequestMapping(value = {"", "/", "/index"})
-    public String index(Model request) throws Exception {
+    public String index() throws Exception {
 
         //CHANGE MANUALLY TO SWITCH (URL still works):
 //        Web3jCourier.pingWeb3j(model);
+        /*RequestBean model = */
         pingInfura();
         return "index";
     }

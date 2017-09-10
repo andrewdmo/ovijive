@@ -7,7 +7,7 @@ import javax.ws.rs.core.Response;
 
 public class livePriceService {
 
-    public static Response tickerResponse(String symbol)throws Exception {
+    public static Response tickerResponse(String symbol) throws Exception {
 
         Client client = ClientBuilder.newClient();
 
