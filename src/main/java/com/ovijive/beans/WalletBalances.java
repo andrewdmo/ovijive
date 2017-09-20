@@ -4,11 +4,15 @@ import org.springframework.context.annotation.Bean;
 
 import static com.ovijive.service.EthAccountService.getAccountBalance;
 
-
 public class WalletBalances {
 
-    private String wallet1;
+    //    private String wallet1;
     private String wallet2;
+
+    public WalletBalances() throws Exception {
+        String wallet1 = wallet1();
+        String wallet2 = wallet2();
+    }
 
 
     @Bean

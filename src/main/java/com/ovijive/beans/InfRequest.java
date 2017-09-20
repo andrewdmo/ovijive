@@ -1,32 +1,38 @@
 package com.ovijive.beans;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import org.springframework.stereotype.Service;
 
+@Service
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class InfRequest {
 
-    public enum Status {
-        SUCCESS, ERROR
-    }
-
-    public String timeStamp;
+    private String timeStamp;
 
     private String userIp;
 
-//    public infRequest() {
+    private enum Status {
+        SUCCESS, ERROR
+    }
+
+//    public InfRequest() {
+//
 //
 //    }
 
+    public String getTimeStamp() {
+        return timeStamp;
+    }
 
+    public void setTimeStamp(String timeStamp) {
+        this.timeStamp = timeStamp;
+    }
 
-// Constructor RequestBean
+    public String getUserIp() {
+        return userIp;
+    }
 
-}//class
-
-
-//    public static void addAttribute(String status, int status1) {
-//    }
-//}
-
-//    Bean should have Gets, Sets and NO-ARG constructor:
-
+    public void setUserIp(String userIp) {
+        this.userIp = userIp;
+    }
+}

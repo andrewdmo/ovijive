@@ -13,18 +13,13 @@ public class PrimaryController {
     @Autowired
     InfuraApiService infuraApiService;
 
-//    public PrimaryController() throws Exception {
-//        pingInfura();
-//    }
-
-
     @RequestMapping(value = {"/", "/index"})
-    public String index() throws Exception {
-
+    public String index(Model model) throws Exception {
+        InfuraApiService infuraApiService = new InfuraApiService();
         //CHANGE MANUALLY TO SWITCH (URL still works):
 //        Web3jCourier.pingWeb3j(model);
         /*RequestBean model = */
-        pingInfura(Model model);
+        infuraApiService.pingInfura(model);
         return "index";
     }
 

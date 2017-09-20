@@ -1,5 +1,6 @@
 package com.ovijive.service;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import javax.ws.rs.client.Client;
@@ -12,30 +13,39 @@ public class EthAccountService {
 
     private static Client client = ClientBuilder.newClient();
 
-
+    @Bean
     public static String getAccountBalance(String address) throws Exception {
 
         return retrieveBalance(address);
     }
 
+    //these should be just one once addresses entered:
+
+    //    @Bean
     private static String retrieveBalance(String address) {
 
-        Response walletResponse = client.target("https://api.infura.io/v1/jsonrpc/ropsten/eth_getBalance?jsonrpc=2.0&method=eth_getBalance&params=%5B%220x85afad1a07d70bcb3850250b6a0903ce231dcbfd%22%2C%20%22latest%22%5D&id=1")
+        Response walletResponse = client.target(address)
 //        Response response = client.target("https://api.infura.io/v1/jsonrpc/ropsten/eth_getBalance?params=" + "\"" + address + "\", " + "\"latest\"")
             .request(MediaType.APPLICATION_JSON_TYPE)
             .header("Accept", "application/json")
             .get();
 
-        Response walletResponse2 = client.target("https://api.infura.io/v1/jsonrpc/ropsten/eth_getBalance?jsonrpc=2.0&method=eth_getBalance&params=%5B%220x66f670357f976de7e434d1ed79ee13cb27b54806%22%2C%20%22latest%22%5D&id=1")
-            .request(MediaType.APPLICATION_JSON_TYPE)
-            .header("Accept", "application/json")
-            .get();
+        return walletResponse.readEntity(String.class);
+    }
 
-        //comes out as: {"jsonrpc":"2.0","id":1,"result":"0x222489bf90d0df200"}
+//    @Bean
+//    private static String retrieveBalance2(String address2) {
+//
+//
+//        Response walletResponse2 = client.target(address2)
+//            .request(MediaType.APPLICATION_JSON_TYPE)
+//            .header("Accept", "application/json")
+//            .get();
+//
+//        return walletResponse2.readEntity(String.class);
+
+
+    //comes out as: {"jsonrpc":"2.0","id":1,"result":"0x222489bf90d0df200"}
 //        return walletResponse.readEntity(String.class);
 
-
-        return walletResponse.readEntity(String.class) + walletResponse2.readEntity(String.class);
-
-    }
 }

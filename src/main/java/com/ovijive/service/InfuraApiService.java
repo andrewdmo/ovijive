@@ -1,6 +1,7 @@
 package com.ovijive.service;
 
 import com.ovijive.beans.InfRequest;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 
@@ -15,23 +16,23 @@ import static com.ovijive.beans.WalletBalances.wallet2;
 @Service
 public class InfuraApiService {
 
-    //    Model model;
-//    @Autowired
-    InfRequest infRequest;
+    @Autowired
+    private InfRequest infRequest;
 
     public InfuraApiService() {
-        String baseApiUrl = "\"https://api.infura.io/v1/";
 
+        String baseApiUrl = "\"https://api.infura.io/v1/";
     }
+
 
     //pub-private :
-    public pingInfura() throws Exception {
+    public Model pingInfura(Model model) throws Exception {
 
-        return updateInf();
+        return updateInf(model, infRequest);
     }
 
-    private updateInf(Model model) throws Exception {
-
+    private Model updateInf(Model model, InfRequest infRequest) throws Exception {
+//        this.model = model;
         Client client = ClientBuilder.newClient();
 
 
@@ -63,8 +64,8 @@ public class InfuraApiService {
         model.addAttribute("wallet1", wallet1());
         model.addAttribute("wallet2", wallet2());
 
-        requestBean.addAttribute("timeStamp", "4:20");
+        model.addAttribute("timeStamp", "4:20");
 
-        return requestBean;
+        return model;
     }
 }
