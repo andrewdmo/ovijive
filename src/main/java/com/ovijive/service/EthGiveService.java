@@ -14,7 +14,7 @@ public class EthGiveService {
 
     Web3j web3one = Web3j.build(new HttpService("https:.//ropsten.infura.io/KH92iLaeW68rq2EQBiSC"));  // defaults to http://localhost:8545/
 
-    public EthGiveService(Web3j web3j) throws Exception {
+    public EthGiveService() throws Exception {
 
         // Test Wallet 1 (from MyEthereumWallet):
 

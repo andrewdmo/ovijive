@@ -11,6 +11,7 @@ body {
             #4b9cd3, #c2c2c2) no-repeat fixed; /*background: url("../img/IMG_4979.jpg") center fixed no-repeat;*/
     background-size: cover;
     height: 150vh;
+    margin: auto;
     /*transition: all 0.5s;*/
 }
 

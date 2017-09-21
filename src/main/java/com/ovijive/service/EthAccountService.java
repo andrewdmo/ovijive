@@ -1,6 +1,5 @@
 package com.ovijive.service;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import javax.ws.rs.client.Client;
@@ -13,7 +12,7 @@ public class EthAccountService {
 
     private static Client client = ClientBuilder.newClient();
 
-    @Bean
+    //    @Bean
     public static String getAccountBalance(String address) throws Exception {
 
         return retrieveBalance(address);
