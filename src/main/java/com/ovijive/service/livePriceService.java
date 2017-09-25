@@ -1,10 +1,13 @@
 package com.ovijive.service;
 
+import org.springframework.stereotype.Service;
+
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+@Service
 public class livePriceService {
 
     public static Response tickerResponse(String symbol) throws Exception {

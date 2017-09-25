@@ -1,7 +1,7 @@
 package com.ovijive.controllers;
 
 import com.ovijive.service.InfuraApiService;
-import com.ovijive.service.Web3jCourier;
+import com.ovijive.service.Web3jService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -34,7 +34,7 @@ public class PrimaryController {
 
     @RequestMapping(value = {"/web3jdashboard", "/web3jdash", "/web3j"})
     public String web3j(Model model) throws Exception {
-        Web3jCourier.pingWeb3j(model);
+        Web3jService.pingWeb3j(model);
         return "index";
     }
 

@@ -36,13 +36,22 @@ public class InfuraApiService {
         Client client = ClientBuilder.newClient();
 
 
-        Response etcBtcTickerResponse = client.target("https://api.infura.io/v1/ticker/ethbtc")
+        Response ethUsdTickerResponse = client.target("https://api.infura.io/v1/ticker/ethusd")
             .request(MediaType.APPLICATION_JSON_TYPE)
             .header("Accept", "application/json")
             .get();
 
-        String body = etcBtcTickerResponse.readEntity(String.class);
+        String ethUsd = ethUsdTickerResponse.readEntity(String.class);
 
+        //Eth-Btc exchange rate:
+        Response ethBtcTickerResponse = client.target("https://api.infura.io/v1/ticker/ethbtc")
+            .request(MediaType.APPLICATION_JSON_TYPE)
+            .header("Accept", "application/json")
+            .get();
+
+        String ethBtc = ethBtcTickerResponse.readEntity(String.class);
+
+        //client version / TEST:
         Response web3ClientVersion = client.target("http://api.infura.io/v1/jsonrpc/ropsten/web3_clientVersion")
             .request(MediaType.APPLICATION_JSON_TYPE)
             .header("Accept", "application/json")
@@ -51,16 +60,18 @@ public class InfuraApiService {
 //        early trial:
 //        String wallet1 = EthAccountService.getAccountBalance("0x85afad1a07d70bcb3850250b6a0903ce231dcbfd");
 
-
         //console:
         System.out.println("status: " + web3ClientVersion.getStatus());
         System.out.println("headers: " + web3ClientVersion.getHeaders());
-        System.out.println("body:" + body);
+        System.out.println("ethUsd:" + ethUsd);
+        System.out.println("ethBtc:" + ethBtc);
 
+        //for MVC:
         model.addAttribute("status", web3ClientVersion.getStatus());
         model.addAttribute("webVersion", web3ClientVersion);
         model.addAttribute("headers", web3ClientVersion.getHeaders());
-        model.addAttribute("body", body);
+        model.addAttribute("etcUsd", ethUsd);
+        model.addAttribute("etcBtc", ethBtc);
         model.addAttribute("wallet1", wallet1());
         model.addAttribute("wallet2", wallet2());
 

@@ -10,7 +10,7 @@ import javax.ws.rs.core.MultivaluedMap;
 import javax.ws.rs.core.Response;
 
 @Service
-public class Web3jCourier {
+public class Web3jService {
 
     //pub-private :
     public static Model pingWeb3j(Model model) throws Exception {
