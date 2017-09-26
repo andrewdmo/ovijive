@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 <head>
-    <title>Ovijive Protocol</title>
+    <title>ovijive Protocol</title>
 
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="keywords"
           content="java, JEE, security, html css, spring, boot, security, responsive, aws, sql, mvc, maven, thymeleaf, skeleton, mobile, restful, tomcat, javascript, web, developer, programmer, UNC, Asheville, candidate, portfolio, available"/>
-    <meta name="description" content="Get chained!"/>
+    <meta name="description" content="ovijive"/>
 
     <link rel="stylesheet" th:href="@{/css/normalize.css}" href="../static/css/normalize.css"/>
     <link rel="stylesheet" th:href="@{/css/skeleton.css}" href="../static/css/skeleton.css"/>
@@ -61,78 +61,71 @@
     <div class="row top primary">
         <div class="four columns">
             <a th:href="index.html" href="index.html" rel="#home">
-                <img th:src="@{/img/EthDarkSideLogo.svg}" src="../static/img/EthDarkSideLogo.svg" class="logo"
-                     alt="Clash logo"/>
+                <img th:src="@{/img/EthDarkSideLogo.svg}" src="../static/img/EthDarkSideLogo.svg" class="navLogo"
+                     alt="ovijive logo"/>
             </a>
         </div><!--four columns-->
         <div class="eight columns">
-            <div class="row oneA menubar">
-                <a th:href="@{/about.html}" href="about.html" class="menu three columns offset-by-one" alt="About"
+            <div class="row oneA u-pull-right">
+                <a th:href="@{/about.html}" href="about.html" class="menuLink" alt="About"
                    name="about">About</a>
-                <a th:href="@{/contact.html}" href="contact.html" class="menu three columns" alt="Contact"
+                <a th:href="@{/contact.html}" href="contact.html" class="menuLink" alt="Contact"
                    name="blog">Contact</a>
-                <!--<a th:href="@{/psarchives.html}" href="psarchives.html" class="menu" alt="Archives" name="archives">Archives</a>-->
-                <!--<a th:href="@{/pscontact.html}" href="pscontact.html" class="menu" alt="Contact" name="contact">Contact</a>-->
-                <!--<div class="row oneB">-->
-                <!--<input type="text" class="searchfield u-pull-right" style="border-radius: 15px" alt="Search"-->
-                <!--name="search"-->
-                <!--placeholder="'Search'"/>-->
-
-                <!--</div>&lt;!&ndash;row oneB&ndash;&gt;-->
-            </div><!--row oneA menubar-->
-
+            </div><!--row oneA-->
+            <br/>
+            <div class="row twoA">
+                <h4 class="row title big"
+                    th:text="'ovijive'">ovijive
+                </h4>
+                <br/>
+                <h6 class="row title small" th:text="'...why not?'">...why not?
+                </h6>
+            </div><!--row twoA-->¬
         </div><!--eight columns-->
     </div><!--row top-->
 
 
     <div class="row middle primary">
-        <div class="row banner">
-
-            <h5 class="row portf idx"
-                th:text="'Welcome to Ovijive'">
-            </h5>
-        </div><!--row banner-->
-
-        <div class="row portf idx">
+        <div class="row red">
             <span class="four columns">ETH-U$D current price:</span>
-            <span class="eight columns" style="color: #901400" th:text="${etcUsd}"></span>
+            <span class="eight columns" th:text="${etcUsd}"></span>
         </div><!--row1.1-->
 
-        <div class="row portf idx">
+        <div class="row red">
             <span class="four columns">ETH-BTC current price:</span>
-            <span class="eight columns" style="color: #901400" th:text="${etcBtc}"></span>
+            <span class="eight columns" th:text="${etcBtc}"></span>
         </div><!--row1.2-->
 
 
-        <div class="row portf idx">
+        <div class="row red">
             <span class="four columns">Ethereum Wallet #1:</span>
-            <span class="eight columns" style="color: #901400" th:text="${wallet1}"></span>
+            <span class="eight columns" th:text="${wallet1}"></span>
         </div><!--row2.1-->
 
-        <div class="row portf idx">
+        <div class="row red">
             <span class="four columns">Ethereum Wallet #2:</span>
-            <span class="eight columns" style="color: #901400" th:text="${wallet2}"></span>
+            <span class="eight columns" th:text="${wallet2}"></span>
         </div><!--row2.2-->
-
-        <div class="row portf idx">
+        <br/>
+        <div class="row blue">
             <span class="four columns">web3 clientVersion (A-Sync):</span>
-            <span class="eight columns" style="color: #901400" th:text="${webVersion}"></span>
+            <span class="eight columns" th:text="${webVersion}"></span>
         </div><!--row3-->
 
 
-        <div class="row portf idx">
+        <div class="row blue">
             <span class="four columns">Web3 clientVersion (Sync, if available):</span>
-            <span class="eight columns" style="color: #901400" th:text="${webVersionSync}">N/A</span>
+            <span class="eight columns" th:text="${webVersionSync}">N/A</span>
         </div><!--row4-->
 
-        <div class="row portf idx ">
+        <div class="row blue ">
             <span class="four columns">Header response:</span>
-            <span class="eight columns" style="color: #901400" th:text="${headers}"></span>
+            <span class="eight columns" th:text="${headers}"></span>
         </div><!--row5-->
 
-        <div class="row portf idx">
+        <div class="row blue">
             <span class="four columns">Server response status (200 = Good):</span>
-            <span class="eight columns" style="color: #901400" th:text="${status}">
+            <span class="eight columns" th:text="${status}">
             </span>
         </div><!--row6-->
 

@@ -5,11 +5,12 @@ import org.web3j.protocol.Web3j;
 import org.web3j.protocol.http.HttpService;
 
 @Service
-public class EthGiveService {
+public class Web3jGiveService {
 
     Web3j web3one = Web3j.build(new HttpService("https:.//ropsten.infura.io/KH92iLaeW68rq2EQBiSC"));  // defaults to http://localhost:8545/
 
-    public EthGiveService() throws Exception {
+    public Web3jGiveService() throws Exception {
+
 
 //        // Test Wallet 1 (from MyEthereumWallet):
 //

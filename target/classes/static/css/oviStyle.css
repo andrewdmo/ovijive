@@ -24,29 +24,39 @@ body {
     margin: 10vh auto 2% auto;
 }
 
-.logo {
-    /*z-index: 1;*/
-    /*width: 48vw;*/
-    background-color: transparent;
-    border: 2px inset transparent;
-    border-radius: 15px; /*don't change*/
-    box-sizing: border-box;
-    display: inline-block;
-    height: 20vh;
-    padding: 5px;
-    position: absolute;
-    text-decoration: none;
-    transition: all 0.5s ease-in-out;
+.blue {
+    color: #4B9CD3FF;
+    opacity: .4;
 }
 
-.logo:hover {
-    background-color: transparent;
-    border: outset #9e1b32 2px;
-    border-radius: 7px;
-    opacity: .7;
-    transform: scale(1.1);
-    transition: all 0.5s ease-in-out;
-    z-index: 4;
+/*.logo {*/
+/*!*z-index: 1;*!*/
+/*!*width: 48vw;*!*/
+/*background-color: transparent;*/
+/*border: 2px inset transparent;*/
+/*border-radius: 15px; !*don't change*!*/
+/*box-sizing: border-box;*/
+/*display: inline-block;*/
+/*height: 20vh;*/
+/*padding: 5px;*/
+/*position: absolute;*/
+/*text-decoration: none;*/
+/*transition: all 0.5s ease-in-out;*/
+/*}*/
+
+/*.logo:hover {*/
+/*background-color: transparent;*/
+/*border: outset #9e1b32 2px;*/
+/*border-radius: 7px;*/
+/*opacity: .7;*/
+/*transform: scale(1.1);*/
+/*transition: all 0.5s ease-in-out;*/
+/*z-index: 4;*/
+/*}*/
+
+.menuLink {
+    /*position: absolute;*/
+    /*right: 15%;*/
 }
 
 .middle {
@@ -56,7 +66,7 @@ body {
     width: 100%;
 }
 
-.navlogo {
+.navLogo {
     background-color: transparent;
     border: 2px inset transparent;
     border-radius: 15px; /*don't change*/
@@ -66,12 +76,12 @@ body {
     margin: 0 auto;
     padding: 0;
     position: absolute;
-    right: 0;
+    /*right: 0;*/
     transition: all 0.5s ease-in-out;
     z-index: 2;
 }
 
-.navlogo:hover {
+.navLogo:hover {
     background-color: transparent;
     border: outset #9e1b32 2px;
     border-radius: 7px;
@@ -79,6 +89,16 @@ body {
     transform: scale(1.1);
     transition: all 0.5s ease-in-out;
     z-index: 4;
+}
+
+.oneA {
+    /*position: relative;*/
+    /*position: absolute;*/
+    margin-right: 15%;
+}
+
+.red {
+    color: #901400
 }
 
 .top {
@@ -90,6 +110,14 @@ body {
     position: fixed;
     right: 5%;
     z-index: 1;
+}
+
+.title {
+    margin-left: 17.3333333333%;
+}
+
+.twoA {
+
 }
 
 .idx {
