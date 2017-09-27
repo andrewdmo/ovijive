@@ -62,6 +62,11 @@ public class PrimaryController {
         return "contact";
     }
 
+    @RequestMapping("/about")
+    public String about() {
+        return "about";
+    }
+
     //    Move to ExceptionController:
 //    @ExceptionHandler
 //    public String error(Exception e) {

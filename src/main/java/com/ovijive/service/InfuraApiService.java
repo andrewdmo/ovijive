@@ -36,7 +36,7 @@ public class InfuraApiService {
         Client client = ClientBuilder.newClient();
 
 
-        Response ethUsdTickerResponse = client.target("https://api.infura.io/v1/ticker/ethusd")
+        Response ethUsdTickerResponse = client.target("https://api.infura.io/v1/ticker/ethusd/full")
             .request(MediaType.APPLICATION_JSON_TYPE)
             .header("Accept", "application/json")
             .get();
