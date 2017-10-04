@@ -1,7 +1,9 @@
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/beans/WalletAddresses.java
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/service/EthAccountService.java
+/Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/entities/EthBtcFull.java
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/Application.java
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/controllers/ExceptHandler.java
+/Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/entities/Tickers.java
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/service/InfGiveService.java
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/entities/Wallet.java
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/service/Web3jGiveService.java

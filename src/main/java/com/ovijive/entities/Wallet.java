@@ -2,11 +2,12 @@ package com.ovijive.entities;
 
 public class Wallet {
 
-//    public Wallet wallet = new Wallet();
-
     public String walletName;
     public String walletAddress;
     private String walletBalance;
+
+    public Wallet() {
+    }
 
 //    public Wallet getWallet() {
 //        return wallet;

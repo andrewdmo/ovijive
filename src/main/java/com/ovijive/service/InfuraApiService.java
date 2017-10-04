@@ -12,6 +12,7 @@ import javax.ws.rs.core.Response;
 
 import static com.ovijive.beans.WalletBalances.wallet1;
 import static com.ovijive.beans.WalletBalances.wallet2;
+import static com.ovijive.service.livePriceService.tickerResponseFull;
 
 @Service
 public class InfuraApiService {
@@ -20,36 +21,31 @@ public class InfuraApiService {
     private InfRequest infRequest;
 
     public InfuraApiService() {
-
         String baseApiUrl = "\"https://api.infura.io/v1/";
     }
 
 
     //pub-private :
     public Model pingInfura(Model model) throws Exception {
-
         return updateInf(model, infRequest);
     }
 
     private Model updateInf(Model model, InfRequest infRequest) throws Exception {
-//        this.model = model;
         Client client = ClientBuilder.newClient();
 
+        //ETH-U$D full list exchange rate:
+        //messy String from JSON:
+//        String ethUsd = tickerResponseFull(client, "ethusd").readEntity(String.class);
 
-        Response ethUsdTickerResponse = client.target("https://api.infura.io/v1/ticker/ethusd/full")
-            .request(MediaType.APPLICATION_JSON_TYPE)
-            .header("Accept", "application/json")
-            .get();
 
-        String ethUsd = ethUsdTickerResponse.readEntity(String.class);
+        //ETH-BTC full list exchange rate:
+//        String ethBtc = tickerResponseFull(client, "ethbtc").readEntity(String.class);
 
-        //Eth-Btc exchange rate:
-        Response ethBtcTickerResponse = client.target("https://api.infura.io/v1/ticker/ethbtc")
-            .request(MediaType.APPLICATION_JSON_TYPE)
-            .header("Accept", "application/json")
-            .get();
+//        EthBtcFull ethBtcFull = new EthBtcFull();
 
-        String ethBtc = ethBtcTickerResponse.readEntity(String.class);
+        Response ethBtcFull = tickerResponseFull("ethbtc");
+        Response ethUsdFull = tickerResponseFull("ethusd");
+
 
         //client version / TEST:
         Response web3ClientVersion = client.target("http://api.infura.io/v1/jsonrpc/ropsten/web3_clientVersion")
@@ -63,15 +59,15 @@ public class InfuraApiService {
         //console:
         System.out.println("status: " + web3ClientVersion.getStatus());
         System.out.println("headers: " + web3ClientVersion.getHeaders());
-        System.out.println("ethUsd:" + ethUsd);
-        System.out.println("ethBtc:" + ethBtc);
+        System.out.println("ethUsd:" + ethUsdFull.getTickers);
+        System.out.println("ethBtc:" + ethBtcFull.);
 
         //for MVC:
         model.addAttribute("status", web3ClientVersion.getStatus());
         model.addAttribute("webVersion", web3ClientVersion);
         model.addAttribute("headers", web3ClientVersion.getHeaders());
-        model.addAttribute("etcUsd", ethUsd);
-        model.addAttribute("etcBtc", ethBtc);
+        model.addAttribute("etcUsd", ethUsdFull);
+        model.addAttribute("etcBtc", ethBtcFull);
         model.addAttribute("wallet1", wallet1());
         model.addAttribute("wallet2", wallet2());
 

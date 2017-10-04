@@ -6,8 +6,12 @@ import org.web3j.protocol.Web3j;
 import org.web3j.protocol.core.methods.response.Web3ClientVersion;
 import org.web3j.protocol.infura.InfuraHttpService;
 
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.core.MultivaluedMap;
 import javax.ws.rs.core.Response;
+
+import static com.ovijive.service.livePriceService.tickerResponseFull;
 
 @Service
 public class Web3jService {
@@ -19,6 +23,8 @@ public class Web3jService {
     }
 
     private static Model update(Model model) throws Exception {
+
+        Client client = ClientBuilder.newClient();
 
         // instantiate request for unique (Ropsten test) Infura node:
         Web3j web3 = Web3j.build(new InfuraHttpService("https://ropsten.infura.io/KH92iLaeW68rq2EQBiSC"));
@@ -32,7 +38,7 @@ public class Web3jService {
         String webVersionSync = web3ClientVersionSync.getWeb3ClientVersion();
 
         //ticker, symbol changeable:
-        Response response = livePriceService.tickerResponse("ethbtc");
+        Response response = tickerResponseFull(client, "ethbtc");
         int status = response.getStatus();
         MultivaluedMap<String, Object> header = response.getHeaders();
         String body = response.readEntity(String.class);

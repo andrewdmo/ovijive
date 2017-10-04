@@ -10,15 +10,19 @@ import javax.ws.rs.core.Response;
 @Service
 public class livePriceService {
 
+    public livePriceService() {
+    }
+
     // web3j uses:
-    public static Response tickerResponse(String symbol) throws Exception {
+    public static Client tickerResponseFull(String symbol) throws Exception {
 
         Client client = ClientBuilder.newClient();
 
-        return client.target("https://api.infura.io/v1/ticker/" + symbol)
+        return client.target("https://api.infura.io/v1/ticker/" + symbol + "/full")
             .request(MediaType.APPLICATION_JSON_TYPE)
             .header("Accept", "application/json")
             .get();
+
     }
 
     // just one exchange:
