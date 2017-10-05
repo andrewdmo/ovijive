@@ -1,5 +1,6 @@
 package com.ovijive.service;
 
+import com.ovijive.entities.EthBtcFull;
 import org.springframework.stereotype.Service;
 
 import javax.ws.rs.client.Client;
@@ -14,14 +15,17 @@ public class livePriceService {
     }
 
     // web3j uses:
-    public static Client tickerResponseFull(String symbol) throws Exception {
+    public static Response tickerResponseFull(String symbol) throws Exception {
 
         Client client = ClientBuilder.newClient();
+        EthBtcFull ethBtcFull = new EthBtcFull();
 
+        //has to be a Response:
         return client.target("https://api.infura.io/v1/ticker/" + symbol + "/full")
             .request(MediaType.APPLICATION_JSON_TYPE)
             .header("Accept", "application/json")
             .get();
+//            .readEntity(EthBtcFull.class);
 
     }
 

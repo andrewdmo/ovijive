@@ -1,7 +1,6 @@
 package com.ovijive.service;
 
-import com.ovijive.beans.InfRequest;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.ovijive.entities.EthBtcFull;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 
@@ -17,8 +16,8 @@ import static com.ovijive.service.livePriceService.tickerResponseFull;
 @Service
 public class InfuraApiService {
 
-    @Autowired
-    private InfRequest infRequest;
+//    @Autowired
+//    private InfRequest infRequest;
 
     public InfuraApiService() {
         String baseApiUrl = "\"https://api.infura.io/v1/";
@@ -27,10 +26,10 @@ public class InfuraApiService {
 
     //pub-private :
     public Model pingInfura(Model model) throws Exception {
-        return updateInf(model, infRequest);
+        return updateInf(model);
     }
 
-    private Model updateInf(Model model, InfRequest infRequest) throws Exception {
+    private Model updateInf(Model model) throws Exception {
         Client client = ClientBuilder.newClient();
 
         //ETH-U$D full list exchange rate:
@@ -41,10 +40,9 @@ public class InfuraApiService {
         //ETH-BTC full list exchange rate:
 //        String ethBtc = tickerResponseFull(client, "ethbtc").readEntity(String.class);
 
-//        EthBtcFull ethBtcFull = new EthBtcFull();
+        EthBtcFull ethBtcFull = tickerResponseFull("ethbtc").readEntity(EthBtcFull.class);
 
-        Response ethBtcFull = tickerResponseFull("ethbtc");
-        Response ethUsdFull = tickerResponseFull("ethusd");
+//        Client ethUsdFull = tickerResponseFull("ethusd");
 
 
         //client version / TEST:
@@ -56,18 +54,19 @@ public class InfuraApiService {
 //        early trial:
 //        String wallet1 = EthAccountService.getAccountBalance("0x85afad1a07d70bcb3850250b6a0903ce231dcbfd");
 
+
         //console:
         System.out.println("status: " + web3ClientVersion.getStatus());
         System.out.println("headers: " + web3ClientVersion.getHeaders());
-        System.out.println("ethUsd:" + ethUsdFull.getTickers);
-        System.out.println("ethBtc:" + ethBtcFull.);
+//        System.out.println("ethUsd: " + ethUsdFull.getTickers);
+        System.out.println("ethBtc: " + ethBtcFull.getTickers());
 
         //for MVC:
         model.addAttribute("status", web3ClientVersion.getStatus());
         model.addAttribute("webVersion", web3ClientVersion);
         model.addAttribute("headers", web3ClientVersion.getHeaders());
-        model.addAttribute("etcUsd", ethUsdFull);
-        model.addAttribute("etcBtc", ethBtcFull);
+//        model.addAttribute("etcUsd", ethUsdFull);
+        model.addAttribute("etcBtc", ethBtcFull.toString());
         model.addAttribute("wallet1", wallet1());
         model.addAttribute("wallet2", wallet2());
 

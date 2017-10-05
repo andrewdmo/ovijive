@@ -6,6 +6,7 @@
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/entities/Tickers.java
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/service/InfGiveService.java
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/entities/Wallet.java
+/Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/entities/InfResponse.java
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/service/Web3jGiveService.java
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/beans/WalletBalances.java
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/service/livePriceService.java
@@ -13,5 +14,5 @@
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/service/InfuraApiService.java
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/config/UnbrokenSecConfig.java
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/beans/InfRequest.java
-/Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/service/InfResponse.java
+/Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/entities/EthUsdFull.java
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/controllers/PrimaryController.java

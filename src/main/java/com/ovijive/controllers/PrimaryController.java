@@ -1,11 +1,12 @@
 package com.ovijive.controllers;
 
 import com.ovijive.service.InfuraApiService;
-import com.ovijive.service.Web3jService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+//import com.ovijive.service.Web3jService;
 
 @Controller
 public class PrimaryController {
@@ -32,11 +33,12 @@ public class PrimaryController {
 //        return "index";
 //    }
 
-    @RequestMapping(value = {"/web3jdashboard", "/web3jdash", "/web3j"})
-    public String web3j(Model model) throws Exception {
-        Web3jService.pingWeb3j(model);
-        return "index";
-    }
+    //for testing;
+//    @RequestMapping(value = {"/web3jdashboard", "/web3jdash", "/web3j"})
+//    public String web3j(Model model) throws Exception {
+//        Web3jService.pingWeb3j(model);
+//        return "index";
+//    }
 
     // maybe change name later for protection:
     // GET/POST handled by Spring Sec.
