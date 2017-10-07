@@ -3,14 +3,14 @@ package com.ovijive.entities;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class EthBtcFull {
+public class EthBtcFullResponse {
 
     private String base;
     private String quote;
     private Tickers[] tickers;
-
-    public EthBtcFull() {
-    }
+//
+//    public EthBtcFullResponse() {
+//    }
 
     public String getBase() {
         return base;
@@ -36,4 +36,3 @@ public class EthBtcFull {
         this.tickers = tickers;
     }
 }
-

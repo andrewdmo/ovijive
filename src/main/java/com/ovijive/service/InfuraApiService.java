@@ -1,6 +1,5 @@
 package com.ovijive.service;
 
-import com.ovijive.entities.EthBtcFull;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 
@@ -20,16 +19,15 @@ public class InfuraApiService {
 //    private InfRequest infRequest;
 
     public InfuraApiService() {
-        String baseApiUrl = "\"https://api.infura.io/v1/";
+        /*String baseApiUrl = "\"https://api.infura.io/v1/";*/
     }
 
-
     //pub-private :
-    public Model pingInfura(Model model) throws Exception {
+    public static Model pingInfura(Model model) throws Exception {
         return updateInf(model);
     }
 
-    private Model updateInf(Model model) throws Exception {
+    private static Model updateInf(Model model) throws Exception {
         Client client = ClientBuilder.newClient();
 
         //ETH-U$D full list exchange rate:
@@ -40,8 +38,9 @@ public class InfuraApiService {
         //ETH-BTC full list exchange rate:
 //        String ethBtc = tickerResponseFull(client, "ethbtc").readEntity(String.class);
 
-        EthBtcFull ethBtcFull = tickerResponseFull("ethbtc").readEntity(EthBtcFull.class);
+        Response rawEthbtc = tickerResponseFull("ethbtc");
 
+        String ethBtc = rawEthbtc.getEntity().toString();
 //        Client ethUsdFull = tickerResponseFull("ethusd");
 
 
@@ -56,17 +55,17 @@ public class InfuraApiService {
 
 
         //console:
-        System.out.println("status: " + web3ClientVersion.getStatus());
-        System.out.println("headers: " + web3ClientVersion.getHeaders());
+        System.out.println("web3jStatus: " + web3ClientVersion.getStatus());
+        System.out.println("web3jHeaders: " + web3ClientVersion.getHeaders());
 //        System.out.println("ethUsd: " + ethUsdFull.getTickers);
-        System.out.println("ethBtc: " + ethBtcFull.getTickers());
+        System.out.println("ethBtc: " + ethbtc.toString());
 
         //for MVC:
         model.addAttribute("status", web3ClientVersion.getStatus());
         model.addAttribute("webVersion", web3ClientVersion);
         model.addAttribute("headers", web3ClientVersion.getHeaders());
 //        model.addAttribute("etcUsd", ethUsdFull);
-        model.addAttribute("etcBtc", ethBtcFull.toString());
+        model.addAttribute("etcBtc", ethbtc.toString());
         model.addAttribute("wallet1", wallet1());
         model.addAttribute("wallet2", wallet2());
 

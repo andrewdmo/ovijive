@@ -6,6 +6,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import static com.ovijive.service.InfuraApiService.pingInfura;
+
 //import com.ovijive.service.Web3jService;
 
 @Controller
@@ -20,7 +22,7 @@ public class PrimaryController {
         //CHANGE MANUALLY TO SWITCH (URL still works):
 //        Web3jCourier.pingWeb3j(model);
         /*RequestBean model = */
-        infuraApiService.pingInfura(model);
+        pingInfura(model);
         return "index";
     }
 
