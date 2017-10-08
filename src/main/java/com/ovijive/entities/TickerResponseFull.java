@@ -1,6 +1,6 @@
 package com.ovijive.entities;
 
-import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
 
 import javax.ws.rs.core.*;
 import java.lang.annotation.Annotation;
@@ -10,30 +10,8 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
 
-@JsonIgnoreProperties(ignoreUnknown = true)
-public class TickerResponse extends Response {
-
-    //Currency pair base:
-    private String base;
-    //Currency pair quote:
-    private String quote;
-    //Bid at the exchange with the most volume:
-    private Long bid;
-    //Ask at the exchange with the most volume:
-    private Long ask;
-    //Exchange with the most volume:
-    private String exchange;
-    //Volume at the exchange with the most volume:
-    private Long volume;
-    //Number of exchanges queried:
-    private int num_exchanges;
-    //Total volume across all exchanges queried:
-    private Long total_volume;
-    //Unix timestamp:
-    private int timestamp;
-
-    public TickerResponse() {
-    }
+@JsonInclude(JsonInclude.Include.NON_NULL)
+public class TickerResponseFull extends Response {
 
     @Override
     public int getStatus() {

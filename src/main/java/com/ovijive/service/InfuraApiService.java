@@ -10,13 +10,13 @@ import javax.ws.rs.core.Response;
 
 import static com.ovijive.beans.WalletBalances.wallet1;
 import static com.ovijive.beans.WalletBalances.wallet2;
-import static com.ovijive.service.livePriceService.tickerResponseFull;
+import static com.ovijive.service.LivePriceService.tickerResponse;
 
 @Service
 public class InfuraApiService {
 
 //    @Autowired
-//    private InfRequest infRequest;
+//    TickerResponse tickerResponse;
 
     public InfuraApiService() {
         /*String baseApiUrl = "\"https://api.infura.io/v1/";*/
@@ -38,9 +38,11 @@ public class InfuraApiService {
         //ETH-BTC full list exchange rate:
 //        String ethBtc = tickerResponseFull(client, "ethbtc").readEntity(String.class);
 
-        Response rawEthbtc = tickerResponseFull("ethbtc");
+        Response tickerResponse = tickerResponse("ethbtc");
+//        Response rawEthbtc = tickerResponseFull("ethbtc");
 
-        String ethBtc = rawEthbtc.getEntity().toString();
+
+        String ethBtc = tickerResponse.toString();
 //        Client ethUsdFull = tickerResponseFull("ethusd");
 
 
@@ -58,14 +60,14 @@ public class InfuraApiService {
         System.out.println("web3jStatus: " + web3ClientVersion.getStatus());
         System.out.println("web3jHeaders: " + web3ClientVersion.getHeaders());
 //        System.out.println("ethUsd: " + ethUsdFull.getTickers);
-        System.out.println("ethBtc: " + ethbtc.toString());
+        System.out.println("ethBtc: " + ethBtc);
 
         //for MVC:
         model.addAttribute("status", web3ClientVersion.getStatus());
         model.addAttribute("webVersion", web3ClientVersion);
         model.addAttribute("headers", web3ClientVersion.getHeaders());
 //        model.addAttribute("etcUsd", ethUsdFull);
-        model.addAttribute("etcBtc", ethbtc.toString());
+        model.addAttribute("etcBtc", tickerResponse.toString());
         model.addAttribute("wallet1", wallet1());
         model.addAttribute("wallet2", wallet2());
 

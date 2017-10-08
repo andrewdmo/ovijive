@@ -8,9 +8,9 @@ public class EthBtcFullResponse {
     private String base;
     private String quote;
     private Tickers[] tickers;
-//
-//    public EthBtcFullResponse() {
-//    }
+
+    public EthBtcFullResponse() {
+    }
 
     public String getBase() {
         return base;
