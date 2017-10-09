@@ -3,13 +3,16 @@
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/Application.java
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/controllers/ExceptHandler.java
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/entities/InfRequest.java
+/Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/entities/TickerResponseFull.java
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/entities/Tickers.java
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/entities/EthBtcFullResponse.java
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/service/InfGiveService.java
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/entities/Wallet.java
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/service/Web3jGiveService.java
+/Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/service/TickerMapper.java
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/beans/WalletBalances.java
-/Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/service/livePriceService.java
+/Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/service/LivePriceService.java
+/Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/entities/GsonTickerResponse.java
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/service/Web3jService.java
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/service/InfuraApiService.java
 /Users/andrewdmo/Projects/ovijive/src/main/java/com/ovijive/config/UnbrokenSecConfig.java

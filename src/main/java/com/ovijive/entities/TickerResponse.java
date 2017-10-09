@@ -85,6 +85,7 @@ public class TickerResponse extends Response {
 
     }
 
+
     @Override
     public MediaType getMediaType() {
         return null;
