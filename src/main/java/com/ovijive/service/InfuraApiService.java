@@ -1,5 +1,6 @@
 package com.ovijive.service;
 
+import com.ovijive.entities.TickerResponseFull;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 
@@ -10,7 +11,7 @@ import javax.ws.rs.core.Response;
 
 import static com.ovijive.beans.WalletBalances.wallet1;
 import static com.ovijive.beans.WalletBalances.wallet2;
-import static com.ovijive.service.LivePriceService.tickerResponse;
+import static com.ovijive.service.LivePriceService.tickerServiceFull;
 
 @Service
 public class InfuraApiService {
@@ -38,11 +39,11 @@ public class InfuraApiService {
         //ETH-BTC full list exchange rate:
 //        String ethBtc = tickerResponseFull(client, "ethbtc").readEntity(String.class);
 
-        Response tickerResponse = tickerResponse("ethbtc");
+        TickerResponseFull tickerResponseFull = tickerServiceFull("ethbtc");
 //        Response rawEthbtc = tickerResponseFull("ethbtc");
 
 
-        String ethBtc = tickerResponse.toString();
+        String ethBtc = tickerResponseFull.toString();
 //        Client ethUsdFull = tickerResponseFull("ethusd");
 
 
@@ -67,7 +68,9 @@ public class InfuraApiService {
         model.addAttribute("webVersion", web3ClientVersion);
         model.addAttribute("headers", web3ClientVersion.getHeaders());
 //        model.addAttribute("etcUsd", ethUsdFull);
-        model.addAttribute("etcBtc", tickerResponse.toString());
+        model.addAttribute("etcBtc", tickerResponseFull.getTimestamp());
+
+//        model.addAttribute("etcBtc", tickerResponseFull.toString());
         model.addAttribute("wallet1", wallet1());
         model.addAttribute("wallet2", wallet2());
 
