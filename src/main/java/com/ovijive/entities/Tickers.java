@@ -7,9 +7,9 @@ public class Tickers {
 
     private Long bid;
     private Long ask;
-    private Long volume;
-    private Long timestamp;
     private String exchange;
+    private Long volume;
+    private int timestamp;
 
     public Tickers() {
     }
@@ -30,6 +30,14 @@ public class Tickers {
         this.ask = ask;
     }
 
+    public String getExchange() {
+        return exchange;
+    }
+
+    public void setExchange(String exchange) {
+        this.exchange = exchange;
+    }
+
     public Long getVolume() {
         return volume;
     }
@@ -38,19 +46,11 @@ public class Tickers {
         this.volume = volume;
     }
 
-    public Long getTimestamp() {
+    public int getTimestamp() {
         return timestamp;
     }
 
-    public void setTimestamp(Long timestamp) {
+    public void setTimestamp(int timestamp) {
         this.timestamp = timestamp;
-    }
-
-    public String getExchange() {
-        return exchange;
-    }
-
-    public void setExchange(String exchange) {
-        this.exchange = exchange;
     }
 }

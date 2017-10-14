@@ -58,9 +58,14 @@ public class LivePriceService {
 //      //serializes to Json:
         Gson gson = new Gson();
 //        TickerResponseFull tickerResponseFull = new TickerResponseFull();
-        String json = gson.toJson(client.target("https://api.infura.io/v1/ticker/" + symbol + "/full"));
+        String json = gson.toJson(tickerClientResponseFull);
+//            .request(MediaType.APPLICATION_JSON_TYPE)
+//            .header("Accept", "application/json")
+//            .get();
         //deserializes:
+//        TickerResponseFull tickerResponseFull2 = gson.fromJson(json, TickerResponseFull.class);
         TickerResponseFull tickerResponseFull2 = gson.fromJson(json, TickerResponseFull.class);
+
 
         return tickerResponseFull2;
 //        return ethBtcFull;

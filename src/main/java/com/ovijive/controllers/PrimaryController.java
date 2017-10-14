@@ -1,7 +1,5 @@
 package com.ovijive.controllers;
 
-import com.ovijive.service.InfuraApiService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,12 +11,12 @@ import static com.ovijive.service.InfuraApiService.pingInfura;
 @Controller
 public class PrimaryController {
 
-    @Autowired
-    InfuraApiService infuraApiService;
+//    @Autowired
+//    InfuraApiService infuraApiService;
 
     @RequestMapping(value = {"/", "/index"})
     public String index(Model model) throws Exception {
-        InfuraApiService infuraApiService = new InfuraApiService();
+//        InfuraApiService infuraApiService = new InfuraApiService();
         //CHANGE MANUALLY TO SWITCH (URL still works):
 //        Web3jCourier.pingWeb3j(model);
         /*RequestBean model = */

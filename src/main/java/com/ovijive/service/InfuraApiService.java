@@ -4,11 +4,6 @@ import com.ovijive.entities.TickerResponseFull;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-
 import static com.ovijive.beans.WalletBalances.wallet1;
 import static com.ovijive.beans.WalletBalances.wallet2;
 import static com.ovijive.service.LivePriceService.tickerServiceFull;
@@ -20,7 +15,6 @@ public class InfuraApiService {
 //    TickerResponse tickerResponse;
 
     public InfuraApiService() {
-        /*String baseApiUrl = "\"https://api.infura.io/v1/";*/
     }
 
     //pub-private :
@@ -29,7 +23,7 @@ public class InfuraApiService {
     }
 
     private static Model updateInf(Model model) throws Exception {
-        Client client = ClientBuilder.newClient();
+//        Client client = ClientBuilder.newClient();
 
         //ETH-U$D full list exchange rate:
         //messy String from JSON:
@@ -46,29 +40,29 @@ public class InfuraApiService {
         String ethBtc = tickerResponseFull.toString();
 //        Client ethUsdFull = tickerResponseFull("ethusd");
 
-
+        String version = tickerResponseFull.getEntity().toString();
         //client version / TEST:
-        Response web3ClientVersion = client.target("http://api.infura.io/v1/jsonrpc/ropsten/web3_clientVersion")
-            .request(MediaType.APPLICATION_JSON_TYPE)
-            .header("Accept", "application/json")
-            .get();
+//        Response web3ClientVersion = client.target("http://api.infura.io/v1/jsonrpc/ropsten/web3_clientVersion")
+//            .request(MediaType.APPLICATION_JSON_TYPE)
+//            .header("Accept", "application/json")
+//            .get();
 
 //        early trial:
 //        String wallet1 = EthAccountService.getAccountBalance("0x85afad1a07d70bcb3850250b6a0903ce231dcbfd");
 
 
         //console:
-        System.out.println("web3jStatus: " + web3ClientVersion.getStatus());
-        System.out.println("web3jHeaders: " + web3ClientVersion.getHeaders());
+        System.out.println("web3jStatus: " + tickerResponseFull.getStatus());
+        System.out.println("web3jHeaders: " + tickerResponseFull.getHeaders());
 //        System.out.println("ethUsd: " + ethUsdFull.getTickers);
         System.out.println("ethBtc: " + ethBtc);
 
         //for MVC:
-        model.addAttribute("status", web3ClientVersion.getStatus());
-        model.addAttribute("webVersion", web3ClientVersion);
-        model.addAttribute("headers", web3ClientVersion.getHeaders());
+        model.addAttribute("status", tickerResponseFull.getStatus());
+        model.addAttribute("webVersion", version);
+        model.addAttribute("headers", tickerResponseFull.getHeaders());
 //        model.addAttribute("etcUsd", ethUsdFull);
-        model.addAttribute("etcBtc", tickerResponseFull.getTimestamp());
+        model.addAttribute("etcBtc", ethBtc);
 
 //        model.addAttribute("etcBtc", tickerResponseFull.toString());
         model.addAttribute("wallet1", wallet1());
