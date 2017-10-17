@@ -40,7 +40,7 @@ public class InfuraApiService {
         String ethBtc = tickerResponseFull.toString();
 //        Client ethUsdFull = tickerResponseFull("ethusd");
 
-        String version = tickerResponseFull.getEntity().toString();
+        String version = tickerResponseFull.getBase();
         //client version / TEST:
 //        Response web3ClientVersion = client.target("http://api.infura.io/v1/jsonrpc/ropsten/web3_clientVersion")
 //            .request(MediaType.APPLICATION_JSON_TYPE)
@@ -52,15 +52,13 @@ public class InfuraApiService {
 
 
         //console:
-        System.out.println("web3jStatus: " + tickerResponseFull.getStatus());
-        System.out.println("web3jHeaders: " + tickerResponseFull.getHeaders());
 //        System.out.println("ethUsd: " + ethUsdFull.getTickers);
         System.out.println("ethBtc: " + ethBtc);
 
         //for MVC:
-        model.addAttribute("status", tickerResponseFull.getStatus());
+//        model.addAttribute("status", tickerResponseFull.getStatus());
         model.addAttribute("webVersion", version);
-        model.addAttribute("headers", tickerResponseFull.getHeaders());
+//        model.addAttribute("headers", tickerResponseFull.getHeaders());
 //        model.addAttribute("etcUsd", ethUsdFull);
         model.addAttribute("etcBtc", ethBtc);
 

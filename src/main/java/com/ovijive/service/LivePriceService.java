@@ -64,10 +64,9 @@ public class LivePriceService {
 //            .get();
         //deserializes:
 //        TickerResponseFull tickerResponseFull2 = gson.fromJson(json, TickerResponseFull.class);
-        TickerResponseFull tickerResponseFull2 = gson.fromJson(json, TickerResponseFull.class);
 
 
-        return tickerResponseFull2;
+        return gson.fromJson(json, TickerResponseFull.class);
 //        return ethBtcFull;
     }
 
