@@ -16,36 +16,37 @@ public class LivePriceService {
     public LivePriceService() {
     }
 
-//    public static Response tickerService(String symbol) throws Exception {
-//
-//        //web3j HTTP (get JSON):
-//        Client client = ClientBuilder.newClient();
-//        Response ethBtc = client.target("https://api.infura.io/v1/ticker/" + symbol)
-//            .request(MediaType.APPLICATION_JSON_TYPE)
-//            .header("Accept", "application/json")
-//            .get();
-//
-//
-//        //serializes to Json:
-//        Gson gson = new Gson();
-//        TickerResponse tickerResponse = new TickerResponse();
-//        String json = gson.toJson(tickerResponse, TickerResponse.class);
-//        //deserializes:
-//        TickerResponse tickerResponse2 = gson.fromJson(tickerResponse, TickerResponse.class);
-//
-//
-//        //console:
-//        String clientOutput = ethBtc.toString();
-//        String gsonOutput = tickerResponse2.toString();
-//        System.out.println("clientResponseOutput:" + clientOutput);
-//        System.out.println("GsonResponseOutput:" + tickerResponse2);
-//
-//        return tickerResponse2;
-////        return ethBtc;
-//    }
+    public static Response tickerService(String symbol) throws Exception {
+        Client client = ClientBuilder.newClient();
+
+        Response tickerClientResponse = client.target("https://api.infura.io/v1/ticker/" + symbol)
+            .request(MediaType.APPLICATION_JSON_TYPE)
+            .header("Accept", "application/json")
+            .get();
+
+        System.out.println(tickerClientResponse.toString());
+
+
+        System.out.println(tickerClientResponse.readEntity(String.class));
+
+        Gson gson = new Gson();
+
+        System.out.println(tickerClientResponse.getEntity());
+
+
+//        String jsonString = gson.fromJson(tickerClientResponse);
+//        System.out.println(jsonString);
+
+//        TickerResponseFull json = gson.fromJson(tickerClientResponse.toString(), TickerResponseFull.class);
+//        System.out.println(json);
+
+//        return json;
+
+        return null;
+    }
 
     // web3j uses:
-    public static TickerResponseFull tickerServiceFull(String symbol) throws Exception {
+    public static Response tickerServiceFull(String symbol) throws Exception {
 
 //      //web3j HTTP (get JSON):
         Client client = ClientBuilder.newClient();
@@ -55,19 +56,23 @@ public class LivePriceService {
             .header("Accept", "application/json")
             .get();
 
+
 //      //serializes to Json:
         Gson gson = new Gson();
 //        TickerResponseFull tickerResponseFull = new TickerResponseFull();
-        String json = gson.toJson(tickerClientResponseFull);
-//            .request(MediaType.APPLICATION_JSON_TYPE)
-//            .header("Accept", "application/json")
-//            .get();
+
+        String jsonString = tickerClientResponseFull.toString();
+
+        TickerResponseFull json = gson.fromJson(jsonString, TickerResponseFull.class);
+
+
         //deserializes:
 //        TickerResponseFull tickerResponseFull2 = gson.fromJson(json, TickerResponseFull.class);
 
-
-        return gson.fromJson(json, TickerResponseFull.class);
-//        return ethBtcFull;
+        System.out.println(json);
+//        System.out.println(tickerClientResponseFull.getEntity().toString());
+//        return gson.fromJson(tickerClientResponseFull, Response.class);
+        return tickerClientResponseFull;
     }
 
 //        Client client = ClientBuilder.newClient();
@@ -91,4 +96,5 @@ public class LivePriceService {
 //            .header("Accept", "application/json")
 //            .get();
 //    }
+
 }

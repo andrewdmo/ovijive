@@ -1,12 +1,13 @@
 package com.ovijive.service;
 
-import com.ovijive.entities.TickerResponseFull;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 
+import javax.ws.rs.core.Response;
+
 import static com.ovijive.beans.WalletBalances.wallet1;
 import static com.ovijive.beans.WalletBalances.wallet2;
-import static com.ovijive.service.LivePriceService.tickerServiceFull;
+import static com.ovijive.service.LivePriceService.tickerService;
 
 @Service
 public class InfuraApiService {
@@ -33,14 +34,18 @@ public class InfuraApiService {
         //ETH-BTC full list exchange rate:
 //        String ethBtc = tickerResponseFull(client, "ethbtc").readEntity(String.class);
 
-        TickerResponseFull tickerResponseFull = tickerServiceFull("ethbtc");
+//        Response tickerResponseFull = tickerServiceFull("ethbtc");
+        Response tickerResponse = tickerService("ethbtc");
+
 //        Response rawEthbtc = tickerResponseFull("ethbtc");
 
 
-        String ethBtc = tickerResponseFull.toString();
+//        String ethBtc = tickerResponseFull.toString();
+        String ethBtc = tickerResponse.toString();
+
 //        Client ethUsdFull = tickerResponseFull("ethusd");
 
-        String version = tickerResponseFull.getBase();
+//        String version = tickerResponseFull.getClass();
         //client version / TEST:
 //        Response web3ClientVersion = client.target("http://api.infura.io/v1/jsonrpc/ropsten/web3_clientVersion")
 //            .request(MediaType.APPLICATION_JSON_TYPE)
@@ -57,7 +62,7 @@ public class InfuraApiService {
 
         //for MVC:
 //        model.addAttribute("status", tickerResponseFull.getStatus());
-        model.addAttribute("webVersion", version);
+//        model.addAttribute("webVersion", version);
 //        model.addAttribute("headers", tickerResponseFull.getHeaders());
 //        model.addAttribute("etcUsd", ethUsdFull);
         model.addAttribute("etcBtc", ethBtc);
