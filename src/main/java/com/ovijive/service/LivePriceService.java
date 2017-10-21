@@ -1,7 +1,6 @@
 package com.ovijive.service;
 
 import com.google.gson.Gson;
-import com.google.gson.stream.JsonReader;
 import com.ovijive.entities.TickerResponse;
 import com.ovijive.entities.TickerResponseFull;
 import org.springframework.stereotype.Service;
@@ -10,7 +9,6 @@ import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.io.StringReader;
 
 @Service
 public class LivePriceService {
@@ -19,7 +17,7 @@ public class LivePriceService {
     public LivePriceService() {
     }
 
-    public static Response tickerService(String symbol) throws Exception {
+    public static TickerResponse tickerService(String symbol) throws Exception {
         Client client = ClientBuilder.newClient();
 
         Response tickerClientResponse = client.target("https://api.infura.io/v1/ticker/" + symbol)
@@ -27,30 +25,42 @@ public class LivePriceService {
             .header("Accept", "application/json")
             .get();
 
+//        Object tickerResponse = tickerClientResponse.getEntity();
+
+        String tickerResponse = tickerClientResponse.readEntity(String.class);
+
+        System.out.println(tickerResponse);
+
+//        TickerResponse tickerResponse = tickerClientResponse.readEntity(TickerResponse.class);
+
         //data tests:
+        System.out.println("tickerResponse.readEntity(TR.class): " + tickerResponse);
+        System.out.println("tickerResponse.readEntity(TR.class).toString: " + tickerResponse.toString());
+
+        Gson gson = new Gson();
+
+        TickerResponse tixResponse = gson.fromJson(tickerResponse, TickerResponse.class);
+//        String requestOut = gson.toJson("https://api.infura.io/v1/ticker/" + symbol);
+
+//        String requestIn = gson.fromJson("https://api.infura.io/v1/ticker/" + symbol);
+//        JsonReader reader = new JsonReader(requestOut);
+//        JsonReader reader = new JsonReader(new StringReader(tickerClientResponse.toString()));
+//        reader.setLenient(true);
+
         System.out.println("response.toString: " + tickerClientResponse.toString());
 
 //        System.out.println("response.readEntity: " + tickerClientResponse.readEntity(String.class));
+
+
+//        System.out.println("response_reader.readEntity(String.class): " + reader);
 //
-//        System.out.println("response.toObject.toString" + tickerClientResponse.readEntity(TickerResponse.class).toString());
-
-        String string = tickerClientResponse.getEntity().toString();
-        System.out.println("response.getEntity.toString: " + string);
-
-        Gson gson = new Gson();
-        JsonReader reader = new JsonReader(new StringReader(tickerClientResponse.readEntity(String.class)));
-//        JsonReader reader = new JsonReader(new StringReader(tickerClientResponse.toString()));
-        reader.setLenient(true);
-
-        System.out.println("response.readEntity(String.class): " + reader);
-
-
-        TickerResponse tickerResponse = gson.fromJson(reader, TickerResponse.class);
-        System.out.println("response.raw: " + tickerResponse);
-
-
-        String tickerResponseStr = gson.fromJson(tickerClientResponse.toString(), String.class);
-        System.out.println("response.toString: " + tickerResponseStr);
+//
+//        TickerResponse tickerResponse = gson.fromJson(reader, TickerResponse.class);
+//        System.out.println("response.raw: " + tickerResponse);
+//
+//
+//        String tickerResponseStr = gson.fromJson(tickerClientResponse.toString(), String.class);
+//        System.out.println("response.toString: " + tickerResponseStr);
 
 //        String jsonString = gson.fromJson("https://api.infura.io/v1/ticker/" + symbol + "/", String.class);
 //        System.out.println("GSon string: " + jsonString);
@@ -64,7 +74,7 @@ public class LivePriceService {
 
 //        return json;
 
-        return null;
+        return tixResponse;
     }
 
     // web3j uses:

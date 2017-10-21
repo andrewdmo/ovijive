@@ -1,9 +1,8 @@
 package com.ovijive.service;
 
+import com.ovijive.entities.TickerResponse;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
-
-import javax.ws.rs.core.Response;
 
 import static com.ovijive.beans.WalletBalances.wallet1;
 import static com.ovijive.beans.WalletBalances.wallet2;
@@ -35,13 +34,16 @@ public class InfuraApiService {
 //        String ethBtc = tickerResponseFull(client, "ethbtc").readEntity(String.class);
 
 //        Response tickerResponseFull = tickerServiceFull("ethbtc");
-        Response tickerResponse = tickerService("ethbtc");
+        TickerResponse tickerResponse = tickerService("ethbtc");
 
 //        Response rawEthbtc = tickerResponseFull("ethbtc");
 
 
 //        String ethBtc = tickerResponseFull.toString();
-        String ethBtc = tickerResponse.toString();
+//        String ethBtcBase = tickerResponse.getBase();
+        String ethBtcExch = tickerResponse.getExchange();
+        Double ethBtcAsk = tickerResponse.getAsk();
+        Double ethBtcBid = tickerResponse.getBid();
 
 //        Client ethUsdFull = tickerResponseFull("ethusd");
 
@@ -58,15 +60,18 @@ public class InfuraApiService {
 
         //console:
 //        System.out.println("ethUsd: " + ethUsdFull.getTickers);
-        System.out.println("ethBtc: " + ethBtc);
+        System.out.println("ethBtcExch: " + ethBtcExch);
+        System.out.println("ethBtcAsk: " + ethBtcAsk);
+        System.out.println("ethBtcBid: " + ethBtcBid);
 
         //for MVC:
 //        model.addAttribute("status", tickerResponseFull.getStatus());
 //        model.addAttribute("webVersion", version);
 //        model.addAttribute("headers", tickerResponseFull.getHeaders());
 //        model.addAttribute("etcUsd", ethUsdFull);
-        model.addAttribute("etcBtc", ethBtc);
-
+        model.addAttribute("etcBtcExch", ethBtcExch);
+        model.addAttribute("etcBtcAsk", ethBtcAsk);
+        model.addAttribute("etcBtcBid", ethBtcBid);
 //        model.addAttribute("etcBtc", tickerResponseFull.toString());
         model.addAttribute("wallet1", wallet1());
         model.addAttribute("wallet2", wallet2());
