@@ -1,6 +1,7 @@
 package com.ovijive.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.springframework.stereotype.Component;
 
 import javax.ws.rs.core.*;
 import java.lang.annotation.Annotation;
@@ -10,6 +11,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
 
+@Component
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class TickerResponseFull extends Response {
 

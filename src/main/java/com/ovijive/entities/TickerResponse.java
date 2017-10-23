@@ -1,6 +1,7 @@
 package com.ovijive.entities;
 
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+import org.springframework.stereotype.Component;
 
 import javax.ws.rs.core.*;
 import java.lang.annotation.Annotation;
@@ -10,8 +11,10 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
 
+@Component
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class TickerResponse extends Response {
+
 
     //Currency pair base:
     private String base;

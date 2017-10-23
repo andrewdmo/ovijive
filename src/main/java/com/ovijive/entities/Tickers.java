@@ -1,48 +1,48 @@
 package com.ovijive.entities;
 
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+import org.springframework.stereotype.Component;
 
+@Component
 @JsonIgnoreProperties
 public class Tickers {
 
-    private Long bid;
-    private Long ask;
-    private String exchange;
-    private Long volume;
+    private Double bid;
+    private Double ask;
+    private Double volume;
     private int timestamp;
+    private String exchange;
 
     public Tickers() {
     }
 
-    public Long getBid() {
+
+    @Override
+    public String toString() {
+        return "Bid: " + this.bid + ", Ask: " + this.ask + ", Volume: " + this.volume + ", Timestamp: " + this.timestamp + ", Exchange: " + this.exchange;
+    }
+
+    public Double getBid() {
         return bid;
     }
 
-    public void setBid(Long bid) {
+    public void setBid(Double bid) {
         this.bid = bid;
     }
 
-    public Long getAsk() {
+    public Double getAsk() {
         return ask;
     }
 
-    public void setAsk(Long ask) {
+    public void setAsk(Double ask) {
         this.ask = ask;
     }
 
-    public String getExchange() {
-        return exchange;
-    }
-
-    public void setExchange(String exchange) {
-        this.exchange = exchange;
-    }
-
-    public Long getVolume() {
+    public Double getVolume() {
         return volume;
     }
 
-    public void setVolume(Long volume) {
+    public void setVolume(Double volume) {
         this.volume = volume;
     }
 
@@ -53,4 +53,13 @@ public class Tickers {
     public void setTimestamp(int timestamp) {
         this.timestamp = timestamp;
     }
+
+    public String getExchange() {
+        return exchange;
+    }
+
+    public void setExchange(String exchange) {
+        this.exchange = exchange;
+    }
+
 }
