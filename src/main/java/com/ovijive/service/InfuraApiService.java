@@ -3,7 +3,6 @@ package com.ovijive.service;
 import com.ovijive.entities.TickerResponse;
 import com.ovijive.entities.TickerResponseFull;
 import com.ovijive.entities.Tickers;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 
@@ -15,14 +14,14 @@ import static com.ovijive.service.LiveTickerService.tickerServiceFull;
 @Service
 public class InfuraApiService {
 
-    @Autowired
-    private static TickerResponse tickerResponse;
-
-    @Autowired
-    private static TickerResponseFull tickerResponseFull;
-
-    @Autowired
-    private static LiveTickerService liveTickerService;
+//    @Autowired
+//    private static TickerResponse tickerResponse;
+//
+//    @Autowired
+//    private static TickerResponseFull tickerResponseFull;
+//
+//    @Autowired
+//    private static LiveTickerService liveTickerService;
 
     public InfuraApiService() {
     }
@@ -97,12 +96,13 @@ public class InfuraApiService {
         model.addAttribute("bidEthBtc", bidEthBtc);
 
         //rewrites, no good:
-        for (Tickers ticker : tickersFullEthUsd) {
-            model.addAttribute("tickersFullEthUsd", ticker);
-        }
+//        for (Tickers ticker : tickersFullEthUsd) {
+//            model.addAttribute("tickersFullEthUsd", ticker);
+//        }
 
         // works with Thymeleaf th:each
 //        for (Tickers ticker2 : tickersFullEthBtc) {
+        model.addAttribute("tickersFullEthUsd", tickersFullEthUsd);
         model.addAttribute("tickersFullEthBtc", tickersFullEthBtc);
 
 

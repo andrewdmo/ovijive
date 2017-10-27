@@ -6,7 +6,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="keywords"
-          content="java, JEE, security, html css, spring, boot, security, responsive, aws, sql, mvc, maven, thymeleaf, skeleton, mobile, restful, tomcat, javascript, web, developer, programmer, UNC, Asheville, candidate, portfolio, available"/>
+          content="java, JEE, security, html css, spring, boot, security, responsive, aws, sql, mvc, maven, thymeleaf, skeleton, mobile, restful, tomcat, javascript, web, developer, programmer, UNC, Asheville, candidate, portfolio, available, ethereum, blockchain, node, infura, ether, gas"/>
     <meta name="description" content="ovijive"/>
 
     <link rel="stylesheet" th:href="@{/css/normalize.css}" href="../static/css/normalize.css"/>
@@ -122,14 +122,16 @@
 
         <!--//EthU$D full:-->
         <div class="row red">
-            <span class="four columns">ETH-U$D all exchanges:</span>
-            <span class="eight columns" th:text="${tickersFullEthUsd}"></span>
+            <div class="four columns">ETH-U$D all exchanges:</div>
+            <div class="eight columns offset-by-four" style="color: black" th:each="tickers : ${tickersFullEthUsd}"
+                 th:text="${tickers}"></div>
         </div><!--row1.2-->
 
         <!--//EthBtc full:-->
         <div class="row red">
             <span class="four columns">ETH-BTC all exchanges:</span>
-            <span class="eight columns" th:each="tickers : ${tickersFullEthBtc}"
+            <br/>
+            <span class="eight columns offset-by-four" style="color: black" th:each="tickers : ${tickersFullEthBtc}"
                   th:text="${tickers}"></span>
             <!--<span class="eight columns" th:text="${tickersFullEthBtc}"></span>-->
         </div><!--row1.2-->

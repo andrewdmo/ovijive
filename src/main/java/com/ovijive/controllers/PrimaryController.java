@@ -6,39 +6,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import static com.ovijive.service.InfuraApiService.pingInfura;
 
-//import com.ovijive.service.Web3jService;
-
 @Controller
 public class PrimaryController {
 
-//    @Autowired
-//    InfuraApiService infuraApiService;
-
     @RequestMapping(value = {"/", "/index"})
     public String index(Model model) throws Exception {
-//        InfuraApiService infuraApiService = new InfuraApiService();
-        //CHANGE MANUALLY TO SWITCH (URL still works):
-//        Web3jCourier.pingWeb3j(model);
-        /*RequestBean model = */
         pingInfura(model);
         return "index";
     }
-
-    //for testing:
-//    @RequestMapping(value = {"/infura", "/infuradash", "/infuradashboard"})
-//    public String infura(Model model) throws Exception {
-////        InfuraApiService ping = new InfuraApiService();
-//        infPing.pingInfura(model);
-//
-//        return "index";
-//    }
-
-    //for testing;
-//    @RequestMapping(value = {"/web3jdashboard", "/web3jdash", "/web3j"})
-//    public String web3j(Model model) throws Exception {
-//        Web3jService.pingWeb3j(model);
-//        return "index";
-//    }
 
     // maybe change name later for protection:
     // GET/POST handled by Spring Sec.
