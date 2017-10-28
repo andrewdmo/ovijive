@@ -8,10 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Clash" />
         <module name="Ovijive" />
+        <module name="ovijive" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="Ovijive" target="1.8" />
+      <module name="ovijive" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

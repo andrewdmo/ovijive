@@ -3,15 +3,30 @@
   <component name="AnalysisUIOptions">
     <option name="SCOPE_TYPE" value="3" />
   </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/main/resources/static/css/oviStyle.css" description="}" line="108" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d7451ae8-c31d-4597-abd8-06e03f3c375d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ovijive/controllers/PrimaryController.class" afterPath="$PROJECT_DIR$/target/classes/com/ovijive/controllers/PrimaryController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ovijive/service/InfuraApiService.class" afterPath="$PROJECT_DIR$/target/classes/com/ovijive/service/InfuraApiService.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/compile/inputFiles.lst" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Ovijive.iml" afterPath="$PROJECT_DIR$/ovijive.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Ovijive-1.4.0.jar" afterPath="$PROJECT_DIR$/target/Ovijive-1.4.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ovijive/Application.class" afterPath="$PROJECT_DIR$/target/classes/com/ovijive/Application.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ovijive/controllers/PrimaryController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ovijive/controllers/PrimaryController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ovijive/service/InfuraApiService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ovijive/service/InfuraApiService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ovijive/Application.java" afterPath="$PROJECT_DIR$/src/main/java/com/ovijive/Application.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/css/oviStyle.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/oviStyle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/css/skeleton.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/skeleton.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/oviStyle.css" afterPath="$PROJECT_DIR$/target/classes/static/css/oviStyle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/skeleton.css" afterPath="$PROJECT_DIR$/target/classes/static/css/skeleton.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/index.html" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,7 +52,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.50291425">
+    <splitter split-orientation="horizontal" split-proportion="0.51655626">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="PrimaryController.java" pinned="true" current-in-tab="false">
@@ -69,8 +84,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="351">
-                  <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+                <state relative-caret-position="339">
+                  <caret line="73" column="73" lean-forward="true" selection-start-line="73" selection-start-column="73" selection-end-line="75" selection-end-column="76" />
                   <folding>
                     <element signature="n#style#0;n#div#1;n#div#6;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#span#1;n#div#7;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -79,21 +94,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="pom.xml" pinned="true" current-in-tab="true">
+          <file leaf-file-name="pom.xml" pinned="true" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pom.xml">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="300">
@@ -123,16 +128,6 @@
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Wallet.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/ovijive/entities/Wallet.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -193,6 +188,18 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="oviStyle.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/oviStyle.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="537">
+                  <caret line="143" column="20" lean-forward="false" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
+                  <folding>
+                    <marker date="1509183754000" expanded="true" signature="56:86" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-second>
     </splitter>
@@ -216,6 +223,7 @@
       <find>portf</find>
       <find>navlogo</find>
       <find>Long</find>
+      <find>550</find>
     </findStrings>
     <replaceStrings>
       <replace>Service</replace>
@@ -252,8 +260,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/clash/WalletBalances.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/clash/entities/Wallet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/clash/beans/WalletBalances.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/clash/service/EthAccountService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/clash/beans/WalletAddresses.java" />
@@ -277,10 +283,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/error.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/ovijive/entities/ethBtcFull.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ovijive/entities/Wallet.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/css/oviStyle.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/ovijive/service/Web3jService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ovijive/entities/EthBtcFull.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ovijive/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ovijive/beans/InfRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ovijive/entities/InfResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ovijive/entities/EthBtcFullResponse.java" />
@@ -292,8 +296,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ovijive/service/GsonTickerResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ovijive/entities/GsonTickerResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ovijive/entities/InfRequest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ovijive/entities/TickerResponseFull.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ovijive/service/LivePriceService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ovijive/service/LiveTickerService.java" />
@@ -302,7 +304,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ovijive/entities/TickerResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ovijive/service/InfuraApiService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ovijive/controllers/PrimaryController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ovijive/Application.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/skeleton.css" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/oviStyle.css" />
       </list>
     </option>
   </component>
@@ -323,6 +331,11 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="Ovijive Protocol" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Ovijive Protocol" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
         </path>
       </expand>
       <select />
@@ -378,37 +391,37 @@
         <subPane>
           <expand>
             <path>
-              <item name="Ovijive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ovijive" type="b2602c69:ProjectViewProjectNode" />
               <item name="ovijive" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Ovijive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ovijive" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ovijive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ovijive" type="b2602c69:ProjectViewProjectNode" />
               <item name="ovijive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Ovijive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ovijive" type="b2602c69:ProjectViewProjectNode" />
               <item name="ovijive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Ovijive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ovijive" type="b2602c69:ProjectViewProjectNode" />
               <item name="ovijive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ovijive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ovijive" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ovijive" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Ovijive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ovijive" type="b2602c69:ProjectViewProjectNode" />
               <item name="ovijive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -417,7 +430,7 @@
               <item name="beans" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Ovijive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ovijive" type="b2602c69:ProjectViewProjectNode" />
               <item name="ovijive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -426,7 +439,7 @@
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Ovijive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ovijive" type="b2602c69:ProjectViewProjectNode" />
               <item name="ovijive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -435,7 +448,7 @@
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Ovijive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ovijive" type="b2602c69:ProjectViewProjectNode" />
               <item name="ovijive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -444,7 +457,7 @@
               <item name="entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Ovijive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ovijive" type="b2602c69:ProjectViewProjectNode" />
               <item name="ovijive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -453,14 +466,14 @@
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Ovijive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ovijive" type="b2602c69:ProjectViewProjectNode" />
               <item name="ovijive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Ovijive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ovijive" type="b2602c69:ProjectViewProjectNode" />
               <item name="ovijive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -468,7 +481,7 @@
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Ovijive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ovijive" type="b2602c69:ProjectViewProjectNode" />
               <item name="ovijive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -477,7 +490,7 @@
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Ovijive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ovijive" type="b2602c69:ProjectViewProjectNode" />
               <item name="ovijive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -495,7 +508,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
@@ -511,22 +524,23 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-      <recent name="src" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static/css" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.ovijive.entities" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/clash/beans" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main" />
       <recent name="$PROJECT_DIR$/src/main/com" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="src" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ovijive.entities" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/META-INF" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -658,6 +672,22 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="ADDITIONAL_ARGS" value="" />
     </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Ovijive" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -688,6 +718,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="ccruntests" factoryName="Run Study Tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Ovijive" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="studyTest" value="" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -727,6 +770,37 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <module name="Clash" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Ovijive" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Ovijive" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Nosetests">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -779,7 +853,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ovijive.Application" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <module name="Ovijive" />
+      <module name="ovijive" />
       <envs />
     </configuration>
   </component>
@@ -867,20 +941,21 @@
       <workItem from="1508807578431" duration="882000" />
       <workItem from="1508960754532" duration="746000" />
       <workItem from="1509026281302" duration="796000" />
-      <workItem from="1509067441465" duration="1750000" />
+      <workItem from="1509067441465" duration="25124000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232757000" />
+    <option name="totallyTimeSpent" value="256131000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Amazon EC2" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31604344" sideWeight="0.2732475" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16705883" sideWeight="0.6874106" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.057224605" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09155937" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="REPL" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -895,12 +970,12 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3517647" sideWeight="0.25" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3256936" sideWeight="0.49427754" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35102534" sideWeight="0.75" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13992763" sideWeight="0.75" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22557297" sideWeight="0.46852645" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32810616" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Jenkins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11516452" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="21" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.083690986" sideWeight="0.49275362" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.04434907" sideWeight="0.49275362" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13090129" sideWeight="0.5072464" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -951,7 +1026,7 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22557297" sideWeight="0.46852645" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Jenkins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11516452" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="21" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.083690986" sideWeight="0.49275362" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.04434907" sideWeight="0.49275362" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -962,7 +1037,7 @@
       <window_info id="Azure Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16705883" sideWeight="0.6874106" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.057224605" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09155937" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="REPL" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Azure Activity Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
@@ -976,7 +1051,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37058824" sideWeight="0.45555556" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31882352" sideWeight="0.49444443" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="HDInsight Spark Submission" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35102534" sideWeight="0.75" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13992763" sideWeight="0.75" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32810616" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293124" sideWeight="0.49713877" order="20" side_tool="false" content_ui="tabs" />
@@ -1009,48 +1084,15 @@
     </breakpoint-manager>
     <watches-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/img/favicon.ico">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/a.sol" />
-    <entry file="uml://SpringLocalModels/module=Ovijive">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>SpringLocalModels</ID>
-          <OriginalElement>module=Ovijive</OriginalElement>
-          <nodes>
-            <node x="" y="">module=Ovijive</node>
-            <node x="" y="">fileset=Ovijive/Application</node>
-            <node x="" y="">com.clash.Application</node>
-            <node x="" y="">com.clash.config.UnbrokenSecConfig</node>
-            <node x="" y="">org.springframework.security.config.annotation.web.configuration.EnableWebSecurity</node>
-            <node x="" y="">org.springframework.boot.autoconfigure.SpringBootApplication</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.7120535714285714" x="460.0" y="81.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Show filesets as groups</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ovijive/beans/WalletAddresses.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/normalize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1087,20 +1129,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="18" column="53" lean-forward="false" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/skeleton.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2070">
-          <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/oviStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1204,16 +1232,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ovijive/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1326,16 +1344,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ovijive/service/EthAccountService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ovijive/entities/Tickers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1396,16 +1404,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ovijive/service/LiveTickerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ovijive/service/InfuraApiService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1413,6 +1411,143 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ovijive/service/EthAccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ovijive/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/org.springframework.boot:Ovijive:1.4.0">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>org.springframework.boot:Ovijive:1.4.0</OriginalElement>
+          <nodes>
+            <node x="" y="">org.springframework.boot:Ovijive:1.4.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.3.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.3.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.3.RELEASE/ch.qos.logback:logback-classic:jar:1.1.11</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.3.RELEASE/ch.qos.logback:logback-classic:jar:1.1.11/ch.qos.logback:logback-core:jar:1.1.11</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.3.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.7.25</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.3.RELEASE/org.slf4j:jul-to-slf4j:jar:1.7.25</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.3.RELEASE/org.slf4j:log4j-over-slf4j:jar:1.7.25</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.3.RELEASE/org.springframework:spring-core:jar:4.3.8.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.3.RELEASE/org.yaml:snakeyaml:jar:1.17</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:1.5.3.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:1.5.3.RELEASE/org.apache.tomcat.embed:tomcat-embed-core:jar:8.5.14</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:1.5.3.RELEASE/org.apache.tomcat.embed:tomcat-embed-el:jar:8.5.14</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:1.5.3.RELEASE/org.apache.tomcat.embed:tomcat-embed-websocket:jar:8.5.14</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.hibernate:hibernate-validator:jar:5.3.5.Final</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.hibernate:hibernate-validator:jar:5.3.5.Final/javax.validation:validation-api:jar:1.1.0.Final</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.hibernate:hibernate-validator:jar:5.3.5.Final/org.jboss.logging:jboss-logging:jar:3.3.1.Final</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.hibernate:hibernate-validator:jar:5.3.5.Final/com.fasterxml:classmate:jar:1.3.3</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.8.8</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.8.8/com.fasterxml.jackson.core:jackson-annotations:jar:2.8.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.8.8/com.fasterxml.jackson.core:jackson-core:jar:2.8.8</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework:spring-web:jar:4.3.8.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework:spring-web:jar:4.3.8.RELEASE/org.springframework:spring-beans:jar:4.3.8.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework:spring-web:jar:4.3.8.RELEASE/org.springframework:spring-context:jar:4.3.8.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework:spring-webmvc:jar:4.3.8.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework:spring-webmvc:jar:4.3.8.RELEASE/org.springframework:spring-expression:jar:4.3.8.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-devtools:jar:1.5.3.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-devtools:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot:jar:1.5.3.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-devtools:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-autoconfigure:jar:1.5.3.RELEASE</node>
+            <node x="" y="">org.postgresql:postgresql:jar:9.4.1212.jre7</node>
+            <node x="" y="">org.glassfish.jersey.core:jersey-client:jar:2.8</node>
+            <node x="" y="">org.glassfish.jersey.core:jersey-client:jar:2.8/org.glassfish.jersey.core:jersey-common:jar:2.8</node>
+            <node x="" y="">org.glassfish.jersey.core:jersey-client:jar:2.8/org.glassfish.jersey.core:jersey-common:jar:2.8/javax.annotation:javax.annotation-api:jar:1.2</node>
+            <node x="" y="">org.glassfish.jersey.core:jersey-client:jar:2.8/org.glassfish.jersey.core:jersey-common:jar:2.8/org.glassfish.jersey.bundles.repackaged:jersey-guava:jar:2.8</node>
+            <node x="" y="">org.glassfish.jersey.core:jersey-client:jar:2.8/org.glassfish.jersey.core:jersey-common:jar:2.8/org.glassfish.hk2:osgi-resource-locator:jar:1.0.1</node>
+            <node x="" y="">org.glassfish.jersey.core:jersey-client:jar:2.8/javax.ws.rs:javax.ws.rs-api:jar:2.0</node>
+            <node x="" y="">org.glassfish.jersey.core:jersey-client:jar:2.8/org.glassfish.hk2:hk2-api:jar:2.2.0</node>
+            <node x="" y="">org.glassfish.jersey.core:jersey-client:jar:2.8/org.glassfish.hk2:hk2-api:jar:2.2.0/org.glassfish.hk2:hk2-utils:jar:2.2.0</node>
+            <node x="" y="">org.glassfish.jersey.core:jersey-client:jar:2.8/org.glassfish.hk2:hk2-api:jar:2.2.0/org.glassfish.hk2.external:aopalliance-repackaged:jar:2.2.0</node>
+            <node x="" y="">org.glassfish.jersey.core:jersey-client:jar:2.8/org.glassfish.hk2.external:javax.inject:jar:2.2.0</node>
+            <node x="" y="">org.glassfish.jersey.core:jersey-client:jar:2.8/org.glassfish.hk2:hk2-locator:jar:2.2.0</node>
+            <node x="" y="">org.glassfish.jersey.core:jersey-client:jar:2.8/org.glassfish.hk2:hk2-locator:jar:2.2.0/org.javassist:javassist:jar:3.21.0-GA</node>
+            <node x="" y="">org.glassfish.jersey.media:jersey-media-json-jackson:jar:2.8</node>
+            <node x="" y="">org.glassfish.jersey.media:jersey-media-json-jackson:jar:2.8/org.codehaus.jackson:jackson-core-asl:jar:1.9.13</node>
+            <node x="" y="">org.glassfish.jersey.media:jersey-media-json-jackson:jar:2.8/org.codehaus.jackson:jackson-mapper-asl:jar:1.9.13</node>
+            <node x="" y="">org.glassfish.jersey.media:jersey-media-json-jackson:jar:2.8/org.codehaus.jackson:jackson-jaxrs:jar:1.9.13</node>
+            <node x="" y="">org.glassfish.jersey.media:jersey-media-json-jackson:jar:2.8/org.codehaus.jackson:jackson-xc:jar:1.9.13</node>
+            <node x="" y="">com.google.code.gson:gson:jar:2.8.2</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-thymeleaf:jar:1.5.3.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-thymeleaf:jar:1.5.3.RELEASE/org.thymeleaf:thymeleaf-spring4:jar:2.1.5.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-thymeleaf:jar:1.5.3.RELEASE/org.thymeleaf:thymeleaf-spring4:jar:2.1.5.RELEASE/org.thymeleaf:thymeleaf:jar:2.1.5.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-thymeleaf:jar:1.5.3.RELEASE/org.thymeleaf:thymeleaf-spring4:jar:2.1.5.RELEASE/org.thymeleaf:thymeleaf:jar:2.1.5.RELEASE/ognl:ognl:jar:3.0.8</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-thymeleaf:jar:1.5.3.RELEASE/org.thymeleaf:thymeleaf-spring4:jar:2.1.5.RELEASE/org.thymeleaf:thymeleaf:jar:2.1.5.RELEASE/org.unbescape:unbescape:jar:1.1.0.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-thymeleaf:jar:1.5.3.RELEASE/nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:jar:1.4.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-thymeleaf:jar:1.5.3.RELEASE/nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:jar:1.4.0/org.codehaus.groovy:groovy:jar:2.4.10</node>
+            <node x="" y="">org.thymeleaf.extras:thymeleaf-extras-springsecurity4:jar:3.0.1.RELEASE</node>
+            <node x="" y="">org.thymeleaf.extras:thymeleaf-extras-springsecurity4:jar:3.0.1.RELEASE/org.slf4j:slf4j-api:jar:1.7.25</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-security:jar:1.5.3.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-security:jar:1.5.3.RELEASE/org.springframework:spring-aop:jar:4.3.8.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-security:jar:1.5.3.RELEASE/org.springframework.security:spring-security-config:jar:4.2.2.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-security:jar:1.5.3.RELEASE/org.springframework.security:spring-security-config:jar:4.2.2.RELEASE/org.springframework.security:spring-security-core:jar:4.2.2.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-security:jar:1.5.3.RELEASE/org.springframework.security:spring-security-web:jar:4.2.2.RELEASE</node>
+            <node x="" y="">org.web3j:core:jar:2.3.0</node>
+            <node x="" y="">org.web3j:core:jar:2.3.0/org.apache.httpcomponents:httpclient:jar:4.5.3</node>
+            <node x="" y="">org.web3j:core:jar:2.3.0/org.apache.httpcomponents:httpclient:jar:4.5.3/org.apache.httpcomponents:httpcore:jar:4.4.6</node>
+            <node x="" y="">org.web3j:core:jar:2.3.0/org.apache.httpcomponents:httpclient:jar:4.5.3/commons-codec:commons-codec:jar:1.10</node>
+            <node x="" y="">org.web3j:core:jar:2.3.0/org.bouncycastle:bcprov-jdk15on:jar:1.54</node>
+            <node x="" y="">org.web3j:core:jar:2.3.0/com.lambdaworks:scrypt:jar:1.4.0</node>
+            <node x="" y="">org.web3j:core:jar:2.3.0/com.squareup:javapoet:jar:1.7.0</node>
+            <node x="" y="">org.web3j:core:jar:2.3.0/io.reactivex:rxjava:jar:1.2.4</node>
+            <node x="" y="">org.web3j:core:jar:2.3.0/com.github.jnr:jnr-unixsocket:jar:0.15</node>
+            <node x="" y="">org.web3j:core:jar:2.3.0/com.github.jnr:jnr-unixsocket:jar:0.15/com.github.jnr:jnr-ffi:jar:2.1.2</node>
+            <node x="" y="">org.web3j:core:jar:2.3.0/com.github.jnr:jnr-unixsocket:jar:0.15/com.github.jnr:jnr-ffi:jar:2.1.2/com.github.jnr:jffi:jar:1.2.14</node>
+            <node x="" y="">org.web3j:core:jar:2.3.0/com.github.jnr:jnr-unixsocket:jar:0.15/com.github.jnr:jnr-ffi:jar:2.1.2/com.github.jnr:jffi:jar:native:1.2.14</node>
+            <node x="" y="">org.web3j:core:jar:2.3.0/com.github.jnr:jnr-unixsocket:jar:0.15/com.github.jnr:jnr-ffi:jar:2.1.2/org.ow2.asm:asm:jar:5.0.3</node>
+            <node x="" y="">org.web3j:core:jar:2.3.0/com.github.jnr:jnr-unixsocket:jar:0.15/com.github.jnr:jnr-ffi:jar:2.1.2/org.ow2.asm:asm-commons:jar:5.0.3</node>
+            <node x="" y="">org.web3j:core:jar:2.3.0/com.github.jnr:jnr-unixsocket:jar:0.15/com.github.jnr:jnr-ffi:jar:2.1.2/org.ow2.asm:asm-analysis:jar:5.0.3</node>
+            <node x="" y="">org.web3j:core:jar:2.3.0/com.github.jnr:jnr-unixsocket:jar:0.15/com.github.jnr:jnr-ffi:jar:2.1.2/org.ow2.asm:asm-tree:jar:5.0.3</node>
+            <node x="" y="">org.web3j:core:jar:2.3.0/com.github.jnr:jnr-unixsocket:jar:0.15/com.github.jnr:jnr-ffi:jar:2.1.2/org.ow2.asm:asm-util:jar:5.0.3</node>
+            <node x="" y="">org.web3j:core:jar:2.3.0/com.github.jnr:jnr-unixsocket:jar:0.15/com.github.jnr:jnr-ffi:jar:2.1.2/com.github.jnr:jnr-x86asm:jar:1.0.2</node>
+            <node x="" y="">org.web3j:core:jar:2.3.0/com.github.jnr:jnr-unixsocket:jar:0.15/com.github.jnr:jnr-constants:jar:0.9.6</node>
+            <node x="" y="">org.web3j:core:jar:2.3.0/com.github.jnr:jnr-unixsocket:jar:0.15/com.github.jnr:jnr-enxio:jar:0.14</node>
+            <node x="" y="">org.web3j:core:jar:2.3.0/com.github.jnr:jnr-unixsocket:jar:0.15/com.github.jnr:jnr-posix:jar:3.0.33</node>
+            <node x="" y="">org.web3j:core:jar:2.3.0/com.github.jnr:jnr-unixsocket:jar:0.15/com.github.jnr:jnr-posix:jar:3.0.33/com.github.jnr:jnr-ffi:jar:2.1.1</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.47219867788038644" x="1146.1491651351332" y="705.787829697133" />
+          <SelectedNodes />
+          <Categories />
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ovijive.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1424,10 +1559,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ovijive/service/LiveTickerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/normalize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="63" column="32" lean-forward="false" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/skeleton.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4507">
+          <caret line="588" column="24" lean-forward="true" selection-start-line="588" selection-start-column="24" selection-end-line="588" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/oviStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="143" column="20" lean-forward="false" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
+          <folding>
+            <marker date="1509183754000" expanded="true" signature="56:86" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+        <state relative-caret-position="339">
+          <caret line="73" column="73" lean-forward="true" selection-start-line="73" selection-start-column="73" selection-end-line="75" selection-end-column="76" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#6;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#div#7;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1452,10 +1623,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>unnamed</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1463,7 +1636,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring (Ovijive)|Spring</last-edited>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1487,7 +1660,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.7</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1499,7 +1672,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Ovijive</last-edited>
+          <last-edited>ovijive</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

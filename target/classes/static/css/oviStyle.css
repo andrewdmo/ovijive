@@ -1,7 +1,7 @@
 * {
     /*For build only, can use checkbox in Chrome:*/
     /*border: 1px solid black;*/
-    overflow: visible;
+    /*overflow: scroll;*/
 
     transition: all 0.5s ease-in-out;
 
@@ -10,15 +10,26 @@
 html,
 body {
     background: linear-gradient(
-            to top right,
+            to bottom right,
             #4b9cd3, #c2c2c2) no-repeat fixed; /*background: url("../img/IMG_4979.jpg") center fixed no-repeat;*/
     background-size: cover;
     height: 150vh;
-    margin: auto;
+    /*margin: auto;*/
     /*transition: all 0.5s;*/
 }
 
 /*/////////////////-400px/////////////*/
+
+.blink {
+    text-blink: .75s;
+    transition: all 0.5s;
+}
+
+.blue {
+    /*color: #4B9CD3FF;*/
+    color: #073763;
+    opacity: .6;
+}
 
 .bottom {
     border-radius: 15px !important;
@@ -27,39 +38,51 @@ body {
     margin: 10vh auto 2% auto;
 }
 
-.blue {
-    color: #4B9CD3FF;
-    opacity: .4;
+.idx {
+
 }
 
-/*.logo {*/
-/*!*z-index: 1;*!*/
-/*!*width: 48vw;*!*/
-/*background-color: transparent;*/
-/*border: 2px inset transparent;*/
-/*border-radius: 15px; !*don't change*!*/
-/*box-sizing: border-box;*/
-/*display: inline-block;*/
-/*height: 20vh;*/
-/*padding: 5px;*/
-/*position: absolute;*/
-/*text-decoration: none;*/
-/*transition: all 0.5s ease-in-out;*/
-/*}*/
-
-/*.logo:hover {*/
-/*background-color: transparent;*/
-/*border: outset #9e1b32 2px;*/
-/*border-radius: 7px;*/
-/*opacity: .7;*/
-/*transform: scale(1.1);*/
-/*transition: all 0.5s ease-in-out;*/
-/*z-index: 4;*/
-/*}*/
+.menuBar {
+    /*background-color: #b9b9b9;*/
+    /*border: 2px inset transparent;*/
+    /*border-radius: 15px;*/
+    display: inline-block;
+    float: right;
+    margin-left: 4%;
+    margin-top: 2vh;
+    opacity: .9;
+    /*overflow: hidden;*/
+    position: absolute;
+    right: 0;
+    transition: border 0.5s, border-radius 0.5s, ease-in-out;
+    vertical-align: middle;
+    /*width: 25vw;*/
+    z-index: 2;
+}
 
 .menuLink {
-    /*position: absolute;*/
-    /*right: 15%;*/
+    color: #073763;
+    /*z-index: 3;*/
+    background-color: rgba(185, 185, 185, 0.24);
+    border: 2px inset transparent;
+    top: 0;
+    border-radius: 2vh;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    vertical-align: middle;
+}
+
+.menuLink:hover {
+    color: #901400;
+    /*z-index: 2;*/
+    background-color: #b9b9b9;
+    border: 0.25vh outset #073763;
+    border-radius: 1vh;
+    opacity: 1.3;
+    transition: all 0.5s ease-in-out;
 }
 
 .middle {
@@ -72,22 +95,23 @@ body {
 .navLogo {
     background-color: transparent;
     border: 2px inset transparent;
-    border-radius: 15px; /*don't change*/
-    box-sizing: border-box;
-    display: inline-block;
-    height: 100%;
+    border-radius: 3vh; /*don't change*/
+    top: 0;
+    /*left: 0;*/
+    /*max-width: 30vh;*/
+    height: 20vh;
     margin: 0 auto;
-    padding: 0;
-    position: absolute;
-    /*right: 0;*/
+    padding: 1vh;
+    position: relative;
     transition: all 0.5s ease-in-out;
-    z-index: 2;
+    vertical-align: middle;
+    z-index: 1;
 }
 
 .navLogo:hover {
     background-color: transparent;
-    border: outset #9e1b32 2px;
-    border-radius: 7px;
+    border: outset #9e1b32 0.25vh;
+    border-radius: 2vh;
     opacity: .7;
     transform: scale(1.1);
     transition: all 0.5s ease-in-out;
@@ -97,35 +121,125 @@ body {
 .oneA {
     /*position: relative;*/
     /*position: absolute;*/
-    margin-right: 15%;
+    /*margin-right: 15%;*/
 }
 
 .red {
     color: #901400
 }
 
+.title {
+    /*background-color: rgba(185, 185, 185, 0.24);*/
+    /*background-size: auto;*/
+    /*border: 2px inset transparent;*/
+    /*border-radius: 3vh;*/
+    text-align: center;
+    text-shadow: #9e1b32 0.5vh 0.5vh 0.5vh;
+    top: 0;
+    z-index: 2;
+    color: #2b2b2b;
+    opacity: 1.3;
+    position: relative;
+    margin: auto;
+    padding: 1vh 5vh;
+    /*margin-left: 10vh;*/
+    vertical-align: middle;
+    max-height: 10vh;
+    width: 100%;
+
+    background-color: rgba(185, 185, 185, 0.24);
+    background-size:;
+    border: 2px inset transparent;
+    border-radius: 3vh;
+    /*position: relative;*/
+    /*margin: auto;*/
+    /*height: 10vh;*/
+    /*z-index: 3;*/
+
+}
+
 .top {
     display: inline-block;
+    box-sizing: border-box;
     height: 20vh;
+    right: 5%;
     left: 5%;
     margin: 0 auto;
     opacity: .7;
     position: fixed;
-    right: 5%;
     z-index: 1;
-}
-
-.title {
-    /*margin-left: 17.3333333333%;*/
 }
 
 .twoA {
     /*margin-left: 30%;*/
 }
 
-.idx {
+/*/////////////////400+px/////////////*/
+
+@media (min-width: 400px) {
+    .container {
+        padding: 0 5%;
+    }
+
+    .top {
+        padding-top: 1%;
+    }
+
+    .middle {
+        margin: 25vh auto 0 auto;
+    }
+
+    .menuBar {
+        margin-top: 0;
+        width: 48%;
+    }
+
+    .menuLink {
+        width: 100%;
+    }
+
+    .title2 {
+        background-color: transparent;
+    }
+
+    .textcopy {
+        font-size: 100%;
+    }
+
+    .button-primary {
+        width: 25vh;
+    }
 
 }
 
+/*/////////////////550+px/////////////*/
+
+@media (min-width: 550px) {
+    .container {
+        padding: 0 5%;
+    }
+
+    .top {
+        padding-top: 2%;
+    }
+
+    .middle {
+        /*allows for top fixed:*/
+        margin: 27vh auto 0 auto;
+    }
+
+    .bottom {
+        bottom: 0;
+    }
+
+    .title2 {
+        background-color: transparent;
+    }
+
+    /*.menuBar {*/
+    /*height: 71px;*/
+    /*}*/
+
+}
 
 

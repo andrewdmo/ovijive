@@ -1,0 +1,17 @@
+com/ovijive/entities/Wallet.class
+com/ovijive/service/Web3jGiveService.class
+com/ovijive/controllers/ExceptHandler.class
+com/ovijive/entities/EthBtcFullResponse.class
+com/ovijive/service/EthAccountService.class
+com/ovijive/controllers/PrimaryController.class
+com/ovijive/service/InfGiveService.class
+com/ovijive/service/LiveTickerService.class
+com/ovijive/Application.class
+com/ovijive/entities/EthUsdFull.class
+com/ovijive/entities/TickerResponse.class
+com/ovijive/beans/WalletBalances.class
+com/ovijive/entities/GsonTickerResponse.class
+com/ovijive/config/UnbrokenSecConfig.class
+com/ovijive/entities/Tickers.class
+com/ovijive/entities/TickerResponseFull.class
+com/ovijive/service/InfuraApiService.class
