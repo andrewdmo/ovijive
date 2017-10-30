@@ -44,6 +44,7 @@
     <meta name="theme-color" content="#ffffff"/>
     <link rel="shortcut icon" th:href="@{/img/favicon.ico}" href="/static/img/favicon.ico"/>
     <link rel="icon" type="image/png" th:href="@{/img/ms-icon-144x144.png}" href="/static/img/favicon.ico"/>
+    <script type="text/javascript" th:src="@{/scripts/viewport.js}" src="/static/scripts/viewport.js"></script>
 
     <!--src="http://raw.githubusercontent.com/ethereum/web3.js/0.16.0/dist/web3.min.js"-->
 
@@ -57,6 +58,18 @@
 
 
 <body>
+<div class="testBar dimensions">
+    //live viewport:
+    <div class="test vw">vw:</div>
+    <div class="test vh">vh:</div>
+    <div class="test vmin">vmin:</div>
+    <div class="test vmax">vmax:</div>
+
+</div>
+<!--<div class="test vw">Test of <code>width: 50vw</code>.</div>-->
+<!--<div class="test vh">Test of <code>width: 50vh</code>.</div>-->
+<!--<div class="test vmin">Test of <code>width: 50vmin</code>.</div>-->
+<!--<div class="test vmax">Test of <code>width: 50vmax</code>.</div>-->
 <div class="container main">
     <div class="row top primary">
         <div class="four columns">
@@ -65,12 +78,15 @@
                      class="navLogo" alt="ovijive logo"/>
             </a>
         </div><!--four columns-->
-        <div class="four columns">
-            <h4 class="title" th:text="'ovijive'">ovijive
+        <div class="four columns titleBar">
+            <h4 th:text="'ovijive'" class="titleText">ovijive
             </h4>
-            <h6 class="title" th:text="'...why not?'">...why not?</h6>
+            <h6 th:text="'...why not?'" class="titleText">...why not?</h6>
         </div>
-        <div class="four columns">
+        <div class="four columns menuBar">
+            <div class="menuTime twelve columns" th:text="${#dates.format(#dates.createNow(),'MM/dd/YY HH:mm')}">
+            </div>
+
             <a th:href="@{/about.html}" href="about.html" class="menuLink six columns" alt="About"
                name="about">About</a>
             <a th:href="@{/contact.html}" href="contact.html" class="menuLink six columns"
