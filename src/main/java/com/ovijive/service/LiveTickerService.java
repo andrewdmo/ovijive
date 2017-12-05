@@ -44,14 +44,13 @@ public class LiveTickerService {
 
         final Client client = ClientBuilder.newClient();
 
-//        Client client = ClientBuilder.newClient();
         Response tickerClientResponseFull = client.target("https://api.infura.io/v1/ticker/" + symbol + "/full")
             .request(MediaType.APPLICATION_JSON_TYPE)
             .header("Accept", "application/json")
             .get();
 
-        //debug string;
-        System.out.println("responseFull.toString: " + tickerClientResponseFull.toString());
+        //debug string to console;
+//        System.out.println("responseFull.toString: " + tickerClientResponseFull.toString());
 
 //      //serializes to Json:
         Gson gson = new Gson();

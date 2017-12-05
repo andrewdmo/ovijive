@@ -44,35 +44,25 @@
     <meta name="theme-color" content="#ffffff"/>
     <link rel="shortcut icon" th:href="@{/img/favicon.ico}" href="/static/img/favicon.ico"/>
     <link rel="icon" type="image/png" th:href="@{/img/ms-icon-144x144.png}" href="/static/img/favicon.ico"/>
+
     <script type="text/javascript" th:src="@{/scripts/viewport.js}" src="/static/scripts/viewport.js"></script>
-
     <!--src="http://raw.githubusercontent.com/ethereum/web3.js/0.16.0/dist/web3.min.js"-->
-
-    <!--<script th:src="@{/scripts/web3.js}" src="/./scripts/web3.js"></script>-->
-    <!--<script>web3 = new Web3(new Web3.providers.HttpProvider("https://ropsten.infura.io/KH92iLaeW68rq2EQBiSC"));</script>-->
-
-
+    <script th:src="@{/scripts/web3.js}" src="/./scripts/web3.js"></script>
     <!--<script>web3 = new Web3(new Web3.providers.HttpProvider("https://testnet.infura.io/"));</script>-->
-    <!--<script>web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/MEDIUMTUTORIAL/"));</script>-->
 </head>
 
 
 <body>
-<div class="testBar dimensions">
-    //live viewport:
-    <div class="test vw">vw:</div>
-    <div class="test vh">vh:</div>
-    <div class="test vmin">vmin:</div>
-    <div class="test vmax">vmax:</div>
-
-</div>
-<!--<div class="test vw">Test of <code>width: 50vw</code>.</div>-->
-<!--<div class="test vh">Test of <code>width: 50vh</code>.</div>-->
-<!--<div class="test vmin">Test of <code>width: 50vmin</code>.</div>-->
-<!--<div class="test vmax">Test of <code>width: 50vmax</code>.</div>-->
 <div class="container main">
+    <div class="three columns testBar dimensions"><!--at bottom left:-->
+        //JS responsive:
+        <div class="test vw">vw:</div>
+        <div class="test vh">vh:</div>
+        <div class="test vmin">vmin:</div>
+        <div class="test vmax">vmax:</div>
+    </div>
     <div class="row top primary">
-        <div class="four columns">
+        <div class="four columns navLogoBar">
             <a th:href="index.html" href="index.html" rel="#home">
                 <img th:src="@{/img/EthDarkSideLogo.svg}" src="../static/img/EthDarkSideLogo.svg"
                      class="navLogo" alt="ovijive logo"/>
@@ -154,7 +144,7 @@
 
         <div class="row red">
             <span class="four columns">Eth Wallet #1:</span>
-            <span class="eight columns" th:text="${wallet1}"></span>
+            <span class="eight columns" th:text="${wallet1Date}"></span>
         </div><!--row2.1-->
 
         <div class="row red">
@@ -172,17 +162,6 @@
             <span class="four columns">Web3 clientVersion (Sync, if available):</span>
             <span class="eight columns" th:text="${webVersionSync}">N/A</span>
         </div><!--row4-->
-
-        <div class="row blue ">
-            <span class="four columns">Header response:</span>
-            <span class="eight columns" th:text="${headers}"></span>
-        </div><!--row5-->
-
-        <div class="row blue">
-            <span class="four columns">Server response status (200 = Good):</span>
-            <span class="eight columns" th:text="${status}">
-            </span>
-        </div><!--row6-->
 
     </div><!--row middle primary-->
 

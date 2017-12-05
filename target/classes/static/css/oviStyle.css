@@ -18,6 +18,7 @@ body {
     /*transition: all 0.5s;*/
 }
 
+/*viewport:*/
 div.test {
     /*border: 1px solid;*/
     /*margin: 10px 0;*/
@@ -66,8 +67,9 @@ div.vmax {
 .menuBar {
     /*top: 0;*/
     /*right: 0;*/
-    padding: auto 0;
+    padding: 0.5vh;
     position: relative;
+    width: 30vw;
 }
 
 .menuLink {
@@ -102,7 +104,7 @@ div.vmax {
 
 .middle {
     display: inline-block;
-    margin-top: 25vh;
+    margin-top: 23vh;
     text-align: center;
     width: 100%;
 }
@@ -111,13 +113,11 @@ div.vmax {
     background-color: transparent;
     border: 0 inset transparent;
     border-radius: 3vh; /*don't change*/
-    box-sizing: content-box;
-    /*top: 0;*/
-    /*left: 0;*/
-    /*width: 30vw;*/
+    box-sizing: border-box;
     max-height: 20vh;
-    /*margin: 0 auto;*/
-    padding: 1vh; /*needed for border*/
+    max-width: 30vw;
+    margin: auto 0;
+    padding: 0.5vh; /*needed for border*/
     position: relative;
     transition: all 0.5s ease-in-out;
     /*z-index: 1;*/
@@ -131,6 +131,10 @@ div.vmax {
     transform: scale(1.1);
     transition: all 0.5s ease-in-out;
     z-index: 4;
+}
+
+.navLogoBar {
+    width: 30vw;
 }
 
 .oneA {
@@ -147,21 +151,24 @@ div.vmax {
     position: fixed;
     opacity: 0.3;
     bottom: 0;
+    left: 0;
     /*right: 0;*/
 }
 
 .titleBar {
     text-align: center;
     text-shadow: #9e1b32 0.5vh 0.5vh 0.5vh;
-    /*top: 0;*/
+    top: 0;
     color: #2b2b2b;
     opacity: 1.3;
     position: relative;
-    /*margin: 0;*/
-    padding: 1vh;
+    margin: auto;
+    padding: 0.5vh;
     vertical-align: middle;
-    height: 20vh;
-    background-color: rgba(185, 185, 185, 0.24);
+    /*height: 20vh;*/
+    width: 30vw;
+    /*background-color: rgba(185, 185, 185, 0.24);*/
+    background-color: transparent;
     background-size: cover;
     /*border: 2px inset transparent;*/
     border-radius: 3vh;
@@ -209,7 +216,7 @@ div.vmax {
     }
 
     .navLogo {
-        max-width: 30vh;
+        /*max-width: 30vh;*/
     }
 
     .title {

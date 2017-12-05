@@ -14,14 +14,6 @@ import static com.ovijive.service.LiveTickerService.tickerServiceFull;
 @Service
 public class InfuraApiService {
 
-//    @Autowired
-//    private static TickerResponse tickerResponse;
-//
-//    @Autowired
-//    private static TickerResponseFull tickerResponseFull;
-//
-//    @Autowired
-//    private static LiveTickerService liveTickerService;
 
     public InfuraApiService() {
     }
@@ -41,7 +33,6 @@ public class InfuraApiService {
         //full ticker:
         TickerResponseFull tickerResponseFullEthUsd = tickerServiceFull("ethusd");
         TickerResponseFull tickerResponseFullEthBtc = tickerServiceFull("ethbtc");
-//        System.out.println(tickerResponseFull.getEntity().toString());
 
         String hiVolExchEthUsd = tickerResponseEthUsd.getExchange();
         Double askEthUsd = tickerResponseEthUsd.getAsk();
@@ -63,6 +54,8 @@ public class InfuraApiService {
             System.out.println(ticker);
         }
 
+        Web3jService.pingWeb3j(model);
+
         //debug:
         System.out.println("hiVolExchEthUsd: " + hiVolExchEthUsd);
         System.out.println("askEthUsd: " + askEthUsd);
@@ -82,9 +75,8 @@ public class InfuraApiService {
         for (Tickers ticker : tickersFullEthBtc) {
             System.out.println(ticker);
         }
-//        System.out.println("tickersFullEthBtc: " + Arrays.toString(tickersFullEthBtc));
 
-        //create object/methods for above and Get properties for below??
+        //create object/methods for above and Get properties for below?
 
         //MVC:
         model.addAttribute("hiVolExchEthUsd", hiVolExchEthUsd);
@@ -108,7 +100,10 @@ public class InfuraApiService {
 
 //        model.addAttribute("tickersFullEthBtc", Arrays.toString(tickersFullEthBtc));
 
-        model.addAttribute("wallet1", wallet1());
+        model.addAttribute("wallet1Date", wallet1().getDate());
+
+        System.out.println(wallet1().toString());
+
         model.addAttribute("wallet2", wallet2());
 
         model.addAttribute("timeStamp", "4:20");
