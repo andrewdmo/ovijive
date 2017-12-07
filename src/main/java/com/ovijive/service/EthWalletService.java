@@ -8,32 +8,48 @@ import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import javax.ws.rs.core.UriBuilder;
 
 @Service
 public class EthWalletService {
 
-    private final static Client client = ClientBuilder.newClient();
+//    private final static Client client = ClientBuilder.newClient();
+
+    //not practical here (defined in application properties
+//    @Value("${walletUrl}")
+//    private static String walletUrl;
 
     public EthWalletService() {
     }
 
-    public static WalletResponse getWalletBalance(String address) throws Exception {
+    public static WalletResponse getWalletBalance(String walletAddy) throws Exception {
 
-        return retrieveBalance(address);
+        return retrieveBalance(walletAddy);
     }
 
     //these should be just one once addresses entered:
 
-    private static WalletResponse retrieveBalance(String walletUrl) throws Exception {
+    private static WalletResponse retrieveBalance(String walletAddy) throws Exception {
+
+        Client client = ClientBuilder.newClient();
+
+//        "https://api.infura.io/v1/jsonrpc/ropsten/eth_getBalance?params=" + walletAddy + "&latest";
+
+        UriBuilder walletUri = UriBuilder.fromPath("https://api.infura.io/v1/jsonrpc/ropsten/eth_getBalance?params=" + walletAddy + "&latest");
+        //test:
+        System.out.println(walletUri.toString());
 
 //        Response walletResponse = client.target(address)
 //        Response walletResponse = client.target("https://api.infura.io/v1/jsonrpc/ropsten/eth_getBalance?params=" + "\"" + address + "\", " + "\"latest\"")
 //        Response walletResponse = client.target("https://api.infura.io/v1/jsonrpc/ropsten/eth_getBalance?params=" + address + "latest")
-        Response walletResponse = client.target("https://api.infura.io/v1/jsonrpc/ropsten/eth_getBalance?params=" + walletUrl + "&latest")
+//        Response walletResponse = client.target("https://api.infura.io/v1/jsonrpc/ropsten/eth_getBalance?params=" + walletAddy + "&latest")
+        Response walletResponse = client.target(walletUri)
             .request(MediaType.APPLICATION_JSON_TYPE)
             .header("Accept", "application/json")
             .get();
         Gson gson = new Gson();
+        //test:
+        System.out.println(gson.fromJson(walletResponse.readEntity(String.class), WalletResponse.class).toString());
         return gson.fromJson(walletResponse.readEntity(String.class), WalletResponse.class);
 
 //        try {
