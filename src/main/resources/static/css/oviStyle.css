@@ -46,8 +46,13 @@ div.vmax {
 /*/////////////////-400px/////////////*/
 
 .blink {
-    text-blink: .75s;
-    transition: all 0.5s;
+    animation: blinker 0.5s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
 }
 
 .blue {
@@ -150,6 +155,12 @@ div.vmax {
     bottom: 0;
     left: 0;
     /*right: 0;*/
+}
+
+th,
+.th {
+    text-align: center;
+    /*width: 100%;*/
 }
 
 .titleBar {

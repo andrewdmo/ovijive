@@ -32,7 +32,7 @@
 <body>
 <div class="container">
 
-    <div class="row top primary">
+    <div class="row top">
         <div class="four columns navLogoBar">
             <a th:href="index.html" href="index.html" rel="#home">
                 <img th:src="@{/img/EthDarkSideLogo.svg}" src="../static/img/EthDarkSideLogo.svg"
@@ -58,83 +58,72 @@
 
 
     <div class="row middle">
+        <table>
+            <tr>
+                <th>
+                    <h6>Ethereum - U$D</h6>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Current Ask:
+                </td>
+                <td>
+                    <code th:text="${askEthUsd}">Eth-Usd ask</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Current Bid:
+                </td>
+                <td>
+                    <code th:text="${bidEthUsd}">Eth-Usd bid</code>
+                </td>
+            </tr>
 
-        <!--EthU$d reg:-->
-        <div class="row red">
-            <span class="four columns">ETH-U$D highest volume exchange:</span>
-            <span class="eight columns" th:text="${hiVolExchEthUsd}"></span>
-        </div><!--row1.2-->
+            <tr>
+                <td>Highest volume exchange:</td>
+                <td>
+                    <code th:text="${hiVolExchEthUsd}">Eth-Usd hi vol</code>
+                </td>
+            </tr>
+        </table>
 
-        <div class="row red">
-            <span class="four columns">ETH-U$D ask price:</span>
-            <span class="eight columns" th:text="${askEthUsd}"></span>
-        </div><!--row1.2-->
+        <table>
+            <tr>
+                <th>
+                    <h6>Ethereum - BitCoin</h6>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Current Ask:
+                </td>
+                <td>
+                    <code th:text="${askEthBtc}">Eth-Btc ask</code>
 
-        <div class="row red">
-            <span class="four columns">ETH-U$D bid price:</span>
-            <span class="eight columns" th:text="${bidEthUsd}"></span>
-        </div><!--row1.2-->
+                </td>
+            </tr>
 
-        <br/>
+            <tr>
+                <td>
+                    Current Bid:
+                </td>
+                <td>
+                    <code th:text="${bidEthBtc}">Eth-Btc bid</code>
+                </td>
+            </tr>
 
-        <!--//EthBtc reg:-->
-        <div class="row red">
-            <span class="four columns">ETH-BTC highest volume exchange:</span>
-            <span class="eight columns" th:text="${hiVolExchEthBtc}"></span>
-        </div><!--row1.2-->
+            <tr>
+                <td>Highest volume exchange:</td>
+                <td>
+                    <code th:text="${hiVolExchEthBtc}">Eth-Btc hi vol</code>
+                </td>
+            </tr>
+        </table>
 
-        <div class="row red">
-            <span class="four columns">ETH-BTC ask price:</span>
-            <span class="eight columns" th:text="${askEthBtc}"></span>
-        </div><!--row1.2-->
+    </div>
 
-        <div class="row red">
-            <span class="four columns">ETH-BTC bid price:</span>
-            <span class="eight columns" th:text="${bidEthBtc}"></span>
-        </div><!--row1.2-->
-
-        <br/>
-
-        <!--//EthU$D full:-->
-        <div class="row red">
-            <div class="four columns">ETH-U$D all exchanges:</div>
-            <div class="eight columns offset-by-four" style="color: black" th:each="tickers : ${tickersFullEthUsd}"
-                 th:text="${tickers}"></div>
-        </div><!--row1.2-->
-
-        <!--//EthBtc full:-->
-        <div class="row red">
-            <span class="four columns">ETH-BTC all exchanges:</span>
-            <br/>
-            <span class="eight columns offset-by-four" style="color: black" th:each="tickers : ${tickersFullEthBtc}"
-                  th:text="${tickers}"></span>
-            <!--<span class="eight columns" th:text="${tickersFullEthBtc}"></span>-->
-        </div><!--row1.2-->
-
-        <br/>
-
-        <div class="row red">
-            <span class="four columns">Eth Wallet #1:</span>
-            <span class="eight columns" th:text="${wallet1Date}"></span>
-        </div><!--row2.1-->
-
-        <div class="row red">
-            <span class="four columns">Ethereum Wallet #2:</span>
-            <span class="eight columns" th:text="${wallet2}"></span>
-        </div><!--row2.2-->
-        <br/>
-        <div class="row blue">
-            <span class="four columns">web3 clientVersion (A-Sync):</span>
-            <span class="eight columns" th:text="${webVersion}"></span>
-        </div><!--row3-->
-
-
-        <div class="row blue">
-            <span class="four columns">Web3 clientVersion (Sync, if available):</span>
-            <span class="eight columns" th:text="${webVersionSync}">N/A</span>
-        </div><!--row4-->
-
-    </div><!--row middle primary-->
 
     <!--Nav to main Index:-->
     <!--<div class="row bottom nav primary">-->
