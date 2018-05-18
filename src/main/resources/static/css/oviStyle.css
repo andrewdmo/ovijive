@@ -3,7 +3,7 @@
     /*border: 1px solid black;*/
     /*overflow: scroll;*/
 
-    transition: all 0.5s ease-in-out;
+    transition: all 0.25s ease-in-out;
     box-sizing: content-box;
 }
 
@@ -15,7 +15,6 @@ body {
     background-size: cover;
     height: 150vh;
     /*margin: auto;*/
-    /*transition: all 0.5s;*/
 }
 
 /*viewport:*/
@@ -119,7 +118,6 @@ div.vmax {
     margin: auto 0;
     padding: 0.5vh; /*needed for border*/
     position: relative;
-    transition: all 0.5s ease-in-out;
     /*z-index: 1;*/
 }
 
@@ -129,7 +127,6 @@ div.vmax {
     border-radius: 2vh;
     opacity: .7;
     transform: scale(1.1);
-    transition: all 0.5s ease-in-out;
     z-index: 4;
 }
 

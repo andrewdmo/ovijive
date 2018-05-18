@@ -6,8 +6,6 @@ import com.ovijive.entities.Tickers;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 
-import static com.ovijive.beans.WalletBalances.wallet1;
-import static com.ovijive.beans.WalletBalances.wallet2;
 import static com.ovijive.service.LiveTickerService.tickerService;
 import static com.ovijive.service.LiveTickerService.tickerServiceFull;
 
@@ -100,13 +98,16 @@ public class InfuraApiService {
 
 //        model.addAttribute("tickersFullEthBtc", Arrays.toString(tickersFullEthBtc));
 
-        model.addAttribute("wallet1Date", wallet1().getDate());
+        //JSON error:
+//        model.addAttribute("wallet1Date", wallet1().getDate());
 
-        System.out.println(wallet1().toString());
+//        System.out.println(wallet1().toString());
 
-        model.addAttribute("wallet2", wallet2());
+//        model.addAttribute("wallet2", wallet2());
 
-        model.addAttribute("timeStamp", "4:20");
+//        model.addAttribute("timeStamp", "4:20");
+
+        System.out.println("model" + model.toString());
 
         return model;
     }

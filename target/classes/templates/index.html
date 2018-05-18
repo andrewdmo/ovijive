@@ -12,38 +12,15 @@
     <link rel="stylesheet" th:href="@{/css/normalize.css}" href="../static/css/normalize.css"/>
     <link rel="stylesheet" th:href="@{/css/skeleton.css}" href="../static/css/skeleton.css"/>
     <link rel="stylesheet" th:href="@{/css/oviStyle.css}" href="../static/css/oviStyle.css"/>
-    <link rel="apple-touch-icon" sizes="57x57" th:href="@{/img/apple-icon-57x57.png}"
-          href="/static/img/apple-icon-57x57.png"/>
-    <link rel="apple-touch-icon" sizes="60x60" th:href="@{/img/apple-icon-60x60.png}"
-          href="/static/img/apple-icon-60x60.png"/>
-    <link rel="apple-touch-icon" sizes="72x72" th:href="@{/img/apple-icon-72x72.png}"
-          href="/static/img/apple-icon-72x72.png"/>
-    <link rel="apple-touch-icon" sizes="76x76" th:href="@{/img/apple-icon-76x76.png}"
-          href="/static/img/apple-icon-76x76.png"/>
-    <link rel="apple-touch-icon" sizes="114x114" th:href="@{/img/apple-icon-114x114.png}"
-          href="/static/img/apple-icon-114x114.png"/>
-    <link rel="apple-touch-icon" sizes="120x120" th:href="@{/img/apple-icon-120x120.png}"
-          href="/static/img/apple-icon-120x120.png"/>
-    <link rel="apple-touch-icon" sizes="144x144" th:href="@{/img/apple-icon-144x144.png}"
-          href="/static/img/apple-icon-144x144.png"/>
-    <link rel="apple-touch-icon" sizes="152x152" th:href="@{/img/apple-icon-152x152.png}"
-          href="/static/img/apple-icon-152x152.png"/>
-    <link rel="apple-touch-icon" sizes="180x180" th:href="@{/img/apple-icon-152x152.png}"
-          href="/static/img/apple-icon-180x180.png"/>
-    <link rel="icon" type="image/png" sizes="192x192" th:href="@{/img/android-icon-192x192.png}"
-          href="/static/img/android-icon-192x192.png"/>
+
+    <link rel="apple-touch-icon" sizes="180x180" th:href="@{/img/apple-touch-icon.png}"
+          href="../static/img/apple-touch-icon.png"/>
     <link rel="icon" type="image/png" sizes="32x32" th:href="@{/img/favicon-32x32.png}"
-          href="/static/img/favicon-32x32.png"/>
-    <link rel="icon" type="image/png" sizes="96x96" th:href="@{/img/favicon-96x96.png}"
-          href="/static/img/favicon-96x96.png"/>
+          href="../static/img/favicon-32x32.png"/>
     <link rel="icon" type="image/png" sizes="16x16" th:href="@{/img/favicon-16x16.png}"
-          href="/static/img/favicon-16x16.png"/>
-    <link rel="manifest" href="/static/img/manifest.json"/>
-    <meta name="msapplication-TileColor" content="#ffffff"/>
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
+          href="../static/img/favicon-16x16.png"/>
+    <meta name="msapplication-TileColor" content="#da532c"/>
     <meta name="theme-color" content="#ffffff"/>
-    <link rel="shortcut icon" th:href="@{/img/favicon.ico}" href="/static/img/favicon.ico"/>
-    <link rel="icon" type="image/png" th:href="@{/img/ms-icon-144x144.png}" href="/static/img/favicon.ico"/>
 
     <script type="text/javascript" th:src="@{/scripts/viewport.js}" src="/static/scripts/viewport.js"></script>
     <!--src="http://raw.githubusercontent.com/ethereum/web3.js/0.16.0/dist/web3.min.js"-->
@@ -53,14 +30,8 @@
 
 
 <body>
-<div class="container main">
-    <div class="three columns testBar dimensions"><!--at bottom left:-->
-        //JS responsive:
-        <div class="test vw">vw:</div>
-        <div class="test vh">vh:</div>
-        <div class="test vmin">vmin:</div>
-        <div class="test vmax">vmax:</div>
-    </div>
+<div class="container">
+
     <div class="row top primary">
         <div class="four columns navLogoBar">
             <a th:href="index.html" href="index.html" rel="#home">
@@ -86,7 +57,7 @@
     </div><!--row top-->
 
 
-    <div class="row middle primary">
+    <div class="row middle">
 
         <!--EthU$d reg:-->
         <div class="row red">
