@@ -35,8 +35,11 @@ public class EthWalletService {
 
 //        "https://api.infura.io/v1/jsonrpc/ropsten/eth_getBalance?params=" + walletAddy + "&latest";
 
-        UriBuilder walletUri = UriBuilder.fromPath("https://api.infura.io/v1/jsonrpc/ropsten/eth_getBalance?params=" + walletAddy + "&latest");
-        //test:
+        //OLD (ROPSEN TEST):
+//        UriBuilder walletUri = UriBuilder.fromPath("https://api.infura.io/v1/jsonrpc/ropsten/eth_getBalance?params=" + walletAddy + "&latest");
+//NEW INFURA PROJECT PATH:
+        UriBuilder walletUri = UriBuilder.fromPath("https://mainnet.infura.io/v3/ovijive" + walletAddy + "&latest");
+
         System.out.println(walletUri.toString());
 
 //        Response walletResponse = client.target(address)
