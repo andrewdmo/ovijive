@@ -9,55 +9,13 @@
   <component name="ChangeListManager">
     <list default="true" id="d7451ae8-c31d-4597-abd8-06e03f3c375d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ovijive/service/EthWalletService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ovijive/service/EthWalletService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Ovijive-1.4.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Ovijive-1.4.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Ovijive-1.4.1.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/Ovijive-1.4.1.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ovijive/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ovijive/beans/WalletBalances.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ovijive/config/UnbrokenSecConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ovijive/controllers/ExceptHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ovijive/controllers/PrimaryController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ovijive/entities/EthBtcFullResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ovijive/entities/EthUsdFull.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ovijive/entities/GsonTickerResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ovijive/entities/TickerResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ovijive/entities/TickerResponseFull.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ovijive/entities/Tickers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ovijive/entities/WalletResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ovijive/service/EthWalletService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ovijive/service/InfGiveService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ovijive/service/InfuraApiService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ovijive/service/LiveTickerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ovijive/service/Web3jGiveService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ovijive/service/Web3jService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/normalize.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/oviStyle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/skeleton.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/EthDarkSideLogo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/EthDarkSideLogo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/android-chrome-192x192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/android-chrome-512x512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/apple-touch-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/browserconfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/favicon-16x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/favicon-32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/mstile-150x150.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/site.webmanifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/scripts/viewport.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/scripts/web3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/CourierError.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/error.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/usersecurespace.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/testWallet1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/testWallet2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ovijive/service/LiveTickerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ovijive/service/LiveTickerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Ovijive-1.4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Ovijive-1.4.1.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -83,7 +41,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6937449">
+    <splitter split-orientation="horizontal" split-proportion="0.74781847">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="PrimaryController.java" pinned="true" current-in-tab="false">
@@ -98,11 +56,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="LiveTickerService.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="LiveTickerService.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/ovijive/service/LiveTickerService.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="222">
-                  <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+                <state relative-caret-position="330">
+                  <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -138,7 +96,7 @@
             <entry file="file://$PROJECT_DIR$/src/main/java/com/ovijive/entities/InfRequest.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="15">
-                  <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+                  <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
                 </state>
               </provider>
             </entry>
@@ -174,16 +132,16 @@
             <entry file="file://$PROJECT_DIR$/src/main/java/com/ovijive/service/Web3jService.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="255">
-                  <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+                  <caret line="21" selection-start-line="21" selection-end-line="21" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="EthWalletService.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="EthWalletService.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/ovijive/service/EthWalletService.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="497">
-                  <caret line="45" column="33" lean-forward="true" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+                <state relative-caret-position="264">
+                  <caret line="44" column="58" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -198,8 +156,8 @@
           <file leaf-file-name="pom.xml" pinned="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pom.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="367">
-                  <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+                <state relative-caret-position="193">
+                  <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -254,6 +212,7 @@
       <find>primary</find>
       <find>blink</find>
       <find>row</find>
+      <find>1.4.1</find>
     </findStrings>
     <replaceStrings>
       <replace>Service</replace>
@@ -327,7 +286,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ovijive/entities/Wallet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ovijive/entities/WalletResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ovijive/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ovijive/service/LiveTickerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ovijive/beans/WalletBalances.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ovijive/service/InfuraApiService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/oviStyle.css" />
@@ -335,9 +293,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/about.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/contact.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/error.html" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ovijive/service/EthWalletService.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ovijive/service/LiveTickerService.java" />
       </list>
     </option>
   </component>
@@ -944,12 +903,12 @@
       <workItem from="1526676427378" duration="240000" />
       <workItem from="1534278526625" duration="1540000" />
       <workItem from="1534544287952" duration="1028000" />
-      <workItem from="1554566646790" duration="451000" />
+      <workItem from="1554566646790" duration="1825000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="328090000" />
+    <option name="totallyTimeSpent" value="329464000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -958,7 +917,7 @@
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="Amazon EC2" order="15" sideWeight="0.2732475" weight="0.31604344" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.6874106" side_tool="true" weight="0.16646563" />
-      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.049305554" />
+      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.108333334" />
       <window_info anchor="bottom" id="Database Changes" order="22" show_stripe_button="false" />
       <window_info anchor="right" id="Mongo Explorer" order="18" />
       <window_info anchor="bottom" id="RNConsole" order="23" />
@@ -973,20 +932,21 @@
       <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4527897" weight="0.37032568" />
       <window_info anchor="bottom" id="TODO" order="4" sideWeight="0.49444443" weight="0.31882352" />
       <window_info anchor="right" id="SvgViewer" order="16" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.24166666" weight="0.3514151" />
       <window_info id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="9" />
       <window_info anchor="bottom" id="Java Enterprise" order="16" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="bottom" id="Run" order="12" sideWeight="0.6875" side_tool="true" weight="0.2629717" />
+      <window_info active="true" anchor="bottom" id="Run" order="12" sideWeight="0.6875" side_tool="true" visible="true" weight="0.2629717" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49427754" weight="0.3256936" />
       <window_info anchor="bottom" id="Spring" order="11" sideWeight="0.46566522" weight="0.10735826" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32810616" />
       <window_info anchor="right" id="Jenkins" order="14" weight="0.11516452" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49275362" visible="true" weight="0.09583333" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49275362" visible="true" weight="0.09583333" />
       <window_info anchor="bottom" id="Problems" order="21" />
       <window_info anchor="right" id="Bean Validation" order="0" weight="0.3297568" />
       <window_info id="Web" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.3125" visible="true" weight="0.2629717" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.3125" weight="0.2629717" />
       <window_info anchor="right" id="Theme Preview" order="12" />
       <window_info id="Favorites" order="4" sideWeight="0.5072464" side_tool="true" weight="0.13090129" />
       <window_info anchor="bottom" id="Fluid" order="19" side_tool="true" />
@@ -1010,7 +970,6 @@
       <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Application Servers" order="13" sideWeight="0.39842632" weight="0.25452352" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.24166666" weight="0.3517647" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.328125" />
     </layout>
     <layout-to-restore>
@@ -1434,13 +1393,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ovijive/beans/WalletBalances.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
@@ -1485,7 +1437,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ovijive/entities/InfRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -1506,10 +1458,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ovijive/service/LiveTickerService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ovijive/service/Web3jGiveService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="75">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ovijive/service/Web3jService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ovijive/service/EthWalletService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="44" column="58" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1523,24 +1496,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ovijive/service/Web3jGiveService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ovijive/service/LiveTickerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ovijive/service/Web3jService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ovijive/service/EthWalletService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="45" column="33" lean-forward="true" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+        <state relative-caret-position="330">
+          <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

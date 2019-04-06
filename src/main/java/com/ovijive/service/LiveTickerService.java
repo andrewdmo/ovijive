@@ -22,6 +22,12 @@ public class LiveTickerService {
         final Client client = ClientBuilder.newClient();
 
         //holler @ Ete
+//        Response tickerClientResponse = client.target("mainnet.infura.io/v3/daf9d1065e9549ed9be88627109d0a25/" + symbol)
+//            .request(MediaType.APPLICATION_JSON_TYPE)
+//            .header("Accept", "application/json")
+//            .get();
+
+//      OLD ROPSTEN / TEST: (works 4/19)
         Response tickerClientResponse = client.target("https://api.infura.io/v1/ticker/" + symbol)
             .request(MediaType.APPLICATION_JSON_TYPE)
             .header("Accept", "application/json")
