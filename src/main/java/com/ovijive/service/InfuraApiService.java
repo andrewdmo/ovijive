@@ -48,31 +48,31 @@ public class InfuraApiService {
         String quoteFullEthBtc = tickerResponseFullEthBtc.getQuote();
         Tickers[] tickersFullEthBtc = tickerResponseFullEthBtc.getTickers();
 
-        for (Tickers ticker : tickersFullEthUsd) {
-            System.out.println(ticker);
-        }
+//        for (Tickers ticker : tickersFullEthUsd) {
+//            System.out.println(ticker);
+//        }
 
         Web3jService.pingWeb3j(model);
 
         //debug:
         System.out.println("hiVolExchEthUsd: " + hiVolExchEthUsd);
-        System.out.println("askEthUsd: " + askEthUsd);
-        System.out.println("askEthUsd: " + askEthUsd);
-
-        System.out.println("hiVolExchEthBtc: " + hiVolExchEthBtc);
-        System.out.println("askEthBtc: " + askEthBtc);
-        System.out.println("askEthBtc: " + askEthBtc);
-
-        System.out.println("baseFullEthUsd: " + baseFullEthUsd);
-        System.out.println("quoteFullEthUsd: " + quoteFullEthUsd);
-        for (Tickers ticker : tickersFullEthUsd) {
-            System.out.println(ticker);
-        }
-        System.out.println("baseFullEthBtc: " + baseFullEthBtc);
-        System.out.println("quoteFullEthBtc: " + quoteFullEthBtc);
-        for (Tickers ticker : tickersFullEthBtc) {
-            System.out.println(ticker);
-        }
+//        System.out.println("askEthUsd: " + askEthUsd);
+//        System.out.println("askEthUsd: " + askEthUsd);
+//
+//        System.out.println("hiVolExchEthBtc: " + hiVolExchEthBtc);
+//        System.out.println("askEthBtc: " + askEthBtc);
+//        System.out.println("askEthBtc: " + askEthBtc);
+//
+//        System.out.println("baseFullEthUsd: " + baseFullEthUsd);
+//        System.out.println("quoteFullEthUsd: " + quoteFullEthUsd);
+//        for (Tickers ticker : tickersFullEthUsd) {
+//            System.out.println(ticker);
+//        }
+//        System.out.println("baseFullEthBtc: " + baseFullEthBtc);
+//        System.out.println("quoteFullEthBtc: " + quoteFullEthBtc);
+//        for (Tickers ticker : tickersFullEthBtc) {
+//            System.out.println(ticker);
+//        }
 
         //create object/methods for above and Get properties for below?
 

@@ -9,7 +9,7 @@ public class ExceptHandler extends Exception {
     //add URL request query feedback later:
     @ExceptionHandler
     public String error(Exception e) {
-
+        System.out.println(e.toString());
         return "error";
     }
 }
