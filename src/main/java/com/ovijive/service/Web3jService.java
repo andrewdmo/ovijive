@@ -18,7 +18,7 @@ public class Web3jService {
 
     private static Model update(Model model) throws Exception {
 
-//        Client client = ClientBuilder.newClient();
+        //        Client client = ClientBuilder.newClient();
 
         // instantiate request for unique (Ropsten test) Infura node:
         Web3j web3 = Web3j.build(new HttpService("https://ropsten.infura.io/v3/daf9d1065e9549ed9be88627109d0a25"));
