@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d7451ae8-c31d-4597-abd8-06e03f3c375d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ovijive/service/Web3jService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ovijive/service/Web3jService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,38 +45,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>.ignore</find>
-      <find>symbol</find>
-      <find>Courier</find>
-      <find>InfuraAp</find>
-      <find>kotlin</find>
-      <find>portf</find>
-      <find>navlogo</find>
-      <find>Long</find>
-      <find>550</find>
-      <find>idx</find>
-      <find>testBar</find>
-      <find>timestamp</find>
-      <find>transition</find>
-      <find>border</find>
-      <find>primary</find>
-      <find>blink</find>
-      <find>row</find>
-      <find>1.4.1</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>Service</replace>
-      <replace>requestBean</replace>
-      <replace>RequestBean</replace>
-      <replace>double</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/src/main/java/com/clash/controllers</dir>
-      <dir>$PROJECT_DIR$</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -235,7 +204,6 @@
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="replType" value="NREPL" />
       <setting name="execution" value="LEININGEN" />
-      <module name="" />
       <setting name="jvmArgs" value="" />
       <setting name="parameters" value="" />
       <setting name="workingDir" value="" />
@@ -250,7 +218,6 @@
       <setting name="replType" value="SOCKET" />
       <setting name="configType" value="SPECIFY" />
       <setting name="fixLineNumbers" value="false" />
-      <module name="" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType">
@@ -561,6 +528,8 @@
       <workItem from="1582379512088" duration="87000" />
       <workItem from="1582379703030" duration="943000" />
       <workItem from="1582678578380" duration="173000" />
+      <workItem from="1582683029341" duration="63000" />
+      <workItem from="1595861801413" duration="1991000" />
     </task>
     <servers />
   </component>
@@ -574,53 +543,46 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="408" y="159" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1581784661878">
+    <state x="408" y="193" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1595861850025">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="408" y="159" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1440.900@0.0.1440.900" timestamp="1581784661878" />
-    <state x="408" y="168" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.821@0.23.1440.821" timestamp="1580783698689" />
-    <state width="1398" height="262" key="GridCell.Tab.0.bottom" timestamp="1582387202923">
+    <state x="408" y="193" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1440.900@0.0.1440.900" timestamp="1595861850025" />
+    <state width="1440" height="270" key="GridCell.Tab.0.bottom" timestamp="1595865004731">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="262" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582387202923" />
-    <state width="1398" height="262" key="GridCell.Tab.0.center" timestamp="1582387202922">
+    <state width="1440" height="270" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1595865004731" />
+    <state width="1440" height="270" key="GridCell.Tab.0.center" timestamp="1595865004730">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="262" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1582387202922" />
-    <state width="1398" height="262" key="GridCell.Tab.0.left" timestamp="1582387202922">
+    <state width="1440" height="270" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1595865004730" />
+    <state width="1440" height="270" key="GridCell.Tab.0.left" timestamp="1595865004729">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="262" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1582387202922" />
-    <state width="1398" height="262" key="GridCell.Tab.0.right" timestamp="1582387202923">
+    <state width="1440" height="270" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1595865004729" />
+    <state width="1440" height="270" key="GridCell.Tab.0.right" timestamp="1595865004731">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="262" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1582387202923" />
-    <state width="1398" height="262" key="GridCell.Tab.1.bottom" timestamp="1582387192794">
+    <state width="1440" height="270" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1595865004731" />
+    <state width="1440" height="270" key="GridCell.Tab.1.bottom" timestamp="1595864960110">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="262" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582387192794" />
-    <state width="1398" height="262" key="GridCell.Tab.1.center" timestamp="1582387192793">
+    <state width="1440" height="270" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1595864960110" />
+    <state width="1440" height="270" key="GridCell.Tab.1.center" timestamp="1595864960109">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="262" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1582387192793" />
-    <state width="1398" height="262" key="GridCell.Tab.1.left" timestamp="1582387192792">
+    <state width="1440" height="270" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1595864960109" />
+    <state width="1440" height="270" key="GridCell.Tab.1.left" timestamp="1595864960109">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="262" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1582387192792" />
-    <state width="1398" height="262" key="GridCell.Tab.1.right" timestamp="1582387192793">
+    <state width="1440" height="270" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1595864960109" />
+    <state width="1440" height="270" key="GridCell.Tab.1.right" timestamp="1595864960110">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="262" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1582387192793" />
-    <state x="258" y="112" key="Maven.ArtifactSearchDialog" timestamp="1581903421631">
+    <state width="1440" height="270" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1595864960110" />
+    <state x="397" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1595861803831">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="258" y="112" key="Maven.ArtifactSearchDialog/0.0.1440.900@0.0.1440.900" timestamp="1581903421631" />
-    <state x="397" y="266" key="com.intellij.ide.util.TipDialog" timestamp="1582682470670">
-      <screen x="0" y="23" width="1440" height="823" />
-    </state>
-    <state x="397" y="266" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1582379710931" />
-    <state x="397" y="266" key="com.intellij.ide.util.TipDialog/0.23.1440.821@0.23.1440.821" timestamp="1582379650032" />
-    <state x="397" y="266" key="com.intellij.ide.util.TipDialog/0.23.1440.823@0.23.1440.823" timestamp="1582682470670" />
+    <state x="397" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1595861803831" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
