@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d7451ae8-c31d-4597-abd8-06e03f3c375d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +146,7 @@
       <option name="studyTest" value="" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Nosetests">
-      <module name="Ovijive" />
+      <module name="Clash" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -165,7 +162,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
-      <module name="Ovijive" />
+      <module name="Clash" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -180,7 +177,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
-      <module name="Ovijive" />
+      <module name="Clash" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -357,7 +354,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Nosetests">
-      <module name="Clash" />
+      <module name="Ovijive" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -373,7 +370,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
-      <module name="Clash" />
+      <module name="Ovijive" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -388,7 +385,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
-      <module name="Clash" />
+      <module name="Ovijive" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -529,7 +526,8 @@
       <workItem from="1582379703030" duration="943000" />
       <workItem from="1582678578380" duration="173000" />
       <workItem from="1582683029341" duration="63000" />
-      <workItem from="1595861801413" duration="1991000" />
+      <workItem from="1595861801413" duration="2439000" />
+      <workItem from="1596551730220" duration="45000" />
     </task>
     <servers />
   </component>
@@ -547,22 +545,26 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="408" y="193" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1440.900@0.0.1440.900" timestamp="1595861850025" />
-    <state width="1440" height="270" key="GridCell.Tab.0.bottom" timestamp="1595865004731">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1440" height="270" key="GridCell.Tab.0.bottom" timestamp="1595866486769">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1440" height="270" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1595865004731" />
-    <state width="1440" height="270" key="GridCell.Tab.0.center" timestamp="1595865004730">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1440" height="270" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1595866486769" />
+    <state width="1440" height="270" key="GridCell.Tab.0.center" timestamp="1595866486767">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1440" height="270" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1595865004730" />
-    <state width="1440" height="270" key="GridCell.Tab.0.left" timestamp="1595865004729">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1440" height="270" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1595866486767" />
+    <state width="1440" height="270" key="GridCell.Tab.0.left" timestamp="1595866486767">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1440" height="270" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1595865004729" />
-    <state width="1440" height="270" key="GridCell.Tab.0.right" timestamp="1595865004731">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1440" height="270" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1595866486767" />
+    <state width="1440" height="270" key="GridCell.Tab.0.right" timestamp="1595866486768">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1440" height="270" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1595865004731" />
+    <state width="1440" height="270" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1595866486768" />
     <state width="1440" height="270" key="GridCell.Tab.1.bottom" timestamp="1595864960110">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -579,10 +581,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1440" height="270" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1595864960110" />
-    <state x="397" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1595861803831">
+    <state x="397" y="281" key="com.intellij.ide.util.TipDialog" timestamp="1596551757461">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="397" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1595861803831" />
+    <state x="397" y="281" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1596551757461" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
